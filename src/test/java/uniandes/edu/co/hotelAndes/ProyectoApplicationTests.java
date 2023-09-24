@@ -1,4 +1,4 @@
-package uniandes.edu.co.proyecto;
+package uniandes.edu.co.hotelAndes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
