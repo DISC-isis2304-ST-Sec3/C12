@@ -1,23 +1,17 @@
 package uniandes.edu.co.hotelAndes.modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name="Usuarios")
+@Table(name="usuarios")
 public class Usuario {
-
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer id;
 
     private String nombre;
 
     private String tipoDocumento;
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private String numeroDocumento;
 
     private String rol;
@@ -36,13 +30,6 @@ public class Usuario {
         this.correo = correo;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
@@ -86,6 +73,6 @@ public class Usuario {
 
     public String toString(){
 
-        return this.nombre+"|"+this.tipoDocumento+"|"+this.numeroDocumento+"|"+this.rol+"|"+this.correo;
+        return this.nombre+"|"+this.tipoDocumento +"|"+this.numeroDocumento +"|"+this.rol+"|"+this.correo;
     }
 }
