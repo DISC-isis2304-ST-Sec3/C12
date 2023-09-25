@@ -11,5 +11,8 @@ import uniandes.edu.co.hotelAndes.modelo.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
+    @Query(value = "SELECT * FROM USUARIOS", nativeQuery = true)
+    Collection<Usuario> darUsuarios();
+
 
 }

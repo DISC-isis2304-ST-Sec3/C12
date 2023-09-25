@@ -17,4 +17,10 @@ public class UsuariosController {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    @GetMapping("/usuarios")
+    public String usuarios(Model model) {
+        model.addAttribute("usuarios", usuarioRepository.darUsuarios());
+        return "usuarios";
+    }
+
 }
