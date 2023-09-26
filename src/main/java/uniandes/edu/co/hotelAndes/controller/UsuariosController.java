@@ -32,12 +32,15 @@ public class UsuariosController {
 
     @PostMapping("/usuarios/new/save")
     public String usuarioGuardar(@ModelAttribute Usuario user) {
+
         usuarioRepository.insertarUsuario(user.getNombre(), user.getTipoDocumento(), user.getNumeroDocumento(), user.getRol(), user.getCorreo());
-        return "redirect:/bares";
+
+        return "redirect:/usuarios";
     }
 
     @GetMapping("/usuarios/{id}/edit")
-    public String usuarioEditarForm(@PathVariable("id") String id, Model model) {
+    public String usuarioEditarForm(@PathVariable("id") long id, Model model) {
+
         Usuario usuario = usuarioRepository.darUsuario(id);
         if (usuario != null) {
             model.addAttribute("usuario", usuario);
@@ -48,8 +51,9 @@ public class UsuariosController {
     }
 
     @PostMapping("/usuarios/{id}/edit/save")
-    public String usuarioEditarGuardar(@PathVariable("id") String id, @ModelAttribute Usuario user) {
-        usuarioRepository.actualizarUsuario( user.getNombre(), user.getTipoDocumento(), user.getNumeroDocumento(), user.getRol(), user.getCorreo());
+    public String usuarioEditarGuardar(@PathVariable("id") long id, @ModelAttribute Usuario user) {
+
+        usuarioRepository.actualizarUsuario( id, user.getNombre(), user.getTipoDocumento(), user.getNumeroDocumento(), user.getRol(), user.getCorreo());
         return "redirect:/usuarios";
     }
 

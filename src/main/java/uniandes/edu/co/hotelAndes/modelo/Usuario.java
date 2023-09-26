@@ -6,13 +6,15 @@ import jakarta.persistence.*;
 @Table(name="usuarios")
 public class Usuario {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private long id;
     private String nombre;
 
     private String tipoDocumento;
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private String numeroDocumento;
+
+    private long numeroDocumento;
 
     private String rol;
 
@@ -21,8 +23,8 @@ public class Usuario {
 
     public Usuario(){;}
 
-    public Usuario(String nombre, String tipoDocumento, String numeroDocumento, String rol, String correo)
-    {
+    public Usuario(long id, String nombre, String tipoDocumento, long numeroDocumento, String rol, String correo) {
+        this.id = id;
         this.nombre = nombre;
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento = numeroDocumento;
@@ -30,6 +32,13 @@ public class Usuario {
         this.correo = correo;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;
@@ -47,11 +56,11 @@ public class Usuario {
         this.tipoDocumento = tipoDocumento;
     }
 
-    public String getNumeroDocumento() {
+    public long getNumeroDocumento() {
         return numeroDocumento;
     }
 
-    public void setNumeroDocumento(String numeroDocumento) {
+    public void setNumeroDocumento(long numeroDocumento) {
         this.numeroDocumento = numeroDocumento;
     }
 
@@ -71,8 +80,16 @@ public class Usuario {
         this.correo = correo;
     }
 
-    public String toString(){
 
-        return this.nombre+"|"+this.tipoDocumento +"|"+this.numeroDocumento +"|"+this.rol+"|"+this.correo;
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", tipoDocumento='" + tipoDocumento + '\'' +
+                ", numeroDocumento='" + numeroDocumento + '\'' +
+                ", rol='" + rol + '\'' +
+                ", correo='" + correo + '\'' +
+                '}';
     }
 }
