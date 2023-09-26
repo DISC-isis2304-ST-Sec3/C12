@@ -1,11 +1,5 @@
-INSERT INTO usuarios (nombre, tipo_documento, numero_documento, rol, correo)
-VALUES ('Admin User', 'CC', '123456789', 'ADMINISTRADOR', 'admin@example.com');
+INSERT INTO usuarios (id, nombre, tipo_documento, numero_documento, rol, correo) VALUES (1, 'Juan Pérez', 'CC', '123456789', 'CLIENTE', 'juan@example.com');
+INSERT INTO usuarios (id, nombre, tipo_documento, numero_documento, rol, correo) VALUES (2, 'María López', 'CE', '987654321', 'EMPLEADO', 'maria@example.com');
+INSERT INTO usuarios (id, nombre, tipo_documento, numero_documento, rol, correo) VALUES (3, 'Admin1', 'CC', '111111111', 'ADMINISTRADOR', 'admin@example.com');
+INSERT INTO usuarios (id, nombre, tipo_documento, numero_documento, rol, correo) VALUES (4, 'Laura Torres', 'NIT', '1234567890', 'GERENTE', 'laura@example.com');
 
-INSERT INTO usuarios (nombre, tipo_documento, numero_documento, rol, correo)
-VALUES ('Cliente 1', 'CC', '987654321', 'CLIENTE', 'cliente1@example.com');
-
-INSERT INTO usuarios (nombre, tipo_documento, numero_documento, rol, correo)
-VALUES ('Empleado 1', 'CC', '456789123', 'EMPLEADO', 'empleado1@example.com');
-
-INSERT INTO usuarios (nombre, tipo_documento, numero_documento, rol, correo)
-VALUES ('Usuario Pasaporte', 'PASAPORTE', 'ABC123XYZ', 'CLIENTE', 'usuario@example.com');

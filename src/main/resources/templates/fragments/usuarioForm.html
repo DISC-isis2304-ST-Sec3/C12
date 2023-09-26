@@ -19,23 +19,23 @@
 
         <label class="col-form-label" for="tipo_Documento">Tipo Documento:</label>
         <select class="form-control" id="tipo_Documento" name="tipoDocumento" required>
-            <option value="Alto" th:selected="${usuario.rol eq 'CC'}">CC</option>
-            <option value="Medio" th:selected="${usuario.rol eq 'CE'}">CE</option>
-            <option value="Bajo" th:selected="${usuario.rol eq 'NIT'}">NIT</option>
-            <option value="Bajo" th:selected="${usuario.rol eq 'PASAPORTE'}">Pasaporte</option>
+            <option value="CC" th:selected="${usuario.tipoDocumento eq 'CC'}">CC</option>
+            <option value="CE" th:selected="${usuario.tipoDocumento eq 'CE'}">CE</option>
+            <option value="NIT" th:selected="${usuario.tipoDocumento eq 'NIT'}">NIT</option>
+            <option value="PASAPORTE" th:selected="${usuario.tipoDocumento eq 'PASAPORTE'}">PASAPORTE</option>
         </select>
 
         <label class="col-form-label">Numero Documento:</label>
-        <input class="form-control" type="text" id="numero_Documento" name="numero_Documento" required th:value="${usuario.numeroDocumento}" />
+        <input class="form-control" type="text" id="numeroDocumento" name="numeroDocumento" required th:value="${usuario.numeroDocumento}" />
 
         <label class="col-form-label" for="rol">Rol:</label>
         <select class="form-control" id="rol" name="rol" required>
 
-            <option value="Alto" th:selected="${usuario.rol eq 'ADMINISTRADOR'}">Administrador</option>
-            <option value="Medio" th:selected="${usuario.rol eq 'CLIENTE'}">Cliente</option>
-            <option value="Bajo" th:selected="${usuario.rol eq 'EMPLEADO'}">Empleado</option>
-            <option value="Bajo" th:selected="${usuario.rol eq 'GERENTE'}">Gerente</option>
-            <option value="Bajo" th:selected="${usuario.rol eq 'RECEPCIONISTA'}">Recepcionista</option>
+            <option value="ADMINISTRADOR" th:selected="${usuario.rol eq 'ADMINISTRADOR'}">ADMINISTRADOR</option>
+            <option value="CLIENTE" th:selected="${usuario.rol eq 'CLIENTE'}">CLIENTE</option>
+            <option value="EMPLEADO" th:selected="${usuario.rol eq 'EMPLEADO'}">EMPLEADO</option>
+            <option value="GERENTE" th:selected="${usuario.rol eq 'GERENTE'}">GERENTE</option>
+            <option value="RECEPCIONISTA" th:selected="${usuario.rol eq 'RECEPCIONISTA'}">RECEPCIONISTA</option>
         </select>
 
         <label class="col-form-label">Correo:</label>
