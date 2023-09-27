@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="horario_Servicio_Inicial" id="4AA7051C-3281-BC18-9A27-258CD2875A06">
+<Attribute name="horarioInicial" id="4AA7051C-3281-BC18-9A27-258CD2875A06">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 14:58:33 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -25,11 +25,10 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario_Servicio_final" id="33D8574A-5B63-2770-542A-1E822B042610">
+<Attribute name="horarioFinal" id="33D8574A-5B63-2770-542A-1E822B042610">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 15:00:08 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -39,20 +38,108 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="15BB5F33-F09E-453B-DD26-AF2696728451" name="Servicios PK">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-25 14:57:49 UTC</createdTime>
+<Attribute name="nombre" id="4E796685-056D-8115-664C-753B483828DD">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:50:57 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>63</dataTypeSize>
+<ownDataTypeParameters>63,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costo" id="4E66FD65-E471-712A-E400-5A1AF7C017F8">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:51:11 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cargado" id="7E870A61-BAFA-7086-0164-580692635555">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:51:26 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="NO" description=""/>
+<valueDef value="SI" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="existe" id="A5C749C7-DAF3-8826-E3F1-A15629AF5EE2">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:51:39 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="NO" description=""/>
+<valueDef value="SI" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="FB1B4694-1393-198B-81AE-4C637541AECD">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>12F48CED-F8B5-C3EE-1B48-801AD052384E</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reserva id" id="14927711-8AB6-EACD-689F-8BAEFCC07654">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>5332B67A-7495-ED25-472D-6A2CFFD1FAAB</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<referedAttribute>D7B323FA-4976-8782-9C3B-AF899D8396E0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6381C308-0A62-6D2A-B5E9-AD5AD5A825C1" name="Servicios PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>9395C930-89BB-DA99-DD56-72AC843F8455</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="false"/>
+</engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>FB1B4694-1393-198B-81AE-4C637541AECD</attributeRef>
+</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

@@ -26,9 +26,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fecha_Inicial" id="79A5B8BE-EEB1-29A9-F545-72687A7799A3">
@@ -36,7 +35,6 @@
 <createdTime>2023-09-26 15:35:12 UTC</createdTime>
 <generatorID>F08044E1-C1E4-7EF2-D17C-3185D709A9ED</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -48,10 +46,20 @@
 <createdTime>2023-09-26 15:35:12 UTC</createdTime>
 <generatorID>F392324C-3DFA-3118-9B96-09762110A764</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acompañantes" id="39BB7F5E-9BC1-1264-2DBF-63F0F453E217">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:51:59 UTC</createdTime>
+<generatorID>08F8036A-BBF8-F0ED-1A6D-C8B925C5732B</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

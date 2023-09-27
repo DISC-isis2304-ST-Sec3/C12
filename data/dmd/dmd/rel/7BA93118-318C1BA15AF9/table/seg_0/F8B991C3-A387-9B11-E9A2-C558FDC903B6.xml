@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8B991C3-A387-9B11-E9A2-C558FDC903B6" name="Carta">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Bares_id" id="A0659F15-B783-0596-B151-528C65DE8329">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49F2D393-7702-D0F4-264D-876D176C4731" referredColumn="96E6102E-37E6-32AB-9DA2-24B746F583FB"/>
+</associations>
+</Column>
+<Column name="Productos_nombre" id="332FA0DD-D29C-A68B-1C1D-F6DBE9F953DE">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07E490E0-3A9D-34B9-3A5E-C6B080C361CB" referredColumn="8DC79C15-2B34-676C-9A23-786D59F600EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46130423-240A-3FE4-D46F-4EB1C1BDE110" name="Carta_PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0659F15-B783-0596-B151-528C65DE8329"/>
+<colUsage columnID="332FA0DD-D29C-A68B-1C1D-F6DBE9F953DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A25ADD5B-5676-3020-0701-DF91AA09B5A6" name="Carta_Bares_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>8B9B756E-3420-997F-D8F1-7F692FBFD601</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0659F15-B783-0596-B151-528C65DE8329"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DAE3256-AC85-057B-8996-479F123FB1EB" name="Carta_Productos_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>8B9B756E-3420-997F-D8F1-7F692FBFD601</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="332FA0DD-D29C-A68B-1C1D-F6DBE9F953DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

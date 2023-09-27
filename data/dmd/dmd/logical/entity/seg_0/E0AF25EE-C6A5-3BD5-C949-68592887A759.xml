@@ -34,26 +34,65 @@
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15</dataTypeSize>
+<dataTypeSize>5</dataTypeSize>
 <listOfValues>
 <valueDef value="NO" description=""/>
 <valueDef value="SI" description=""/>
 </listOfValues>
-<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nit" id="D5AB3585-999F-158E-AE18-AE2F6112A3A7">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-25 15:15:55 UTC</createdTime>
+<Attribute name="precioNoche" id="D8D3981E-5493-4535-FCDF-BD53F068C5CF">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:42:39 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hotel id" id="5C6B44C8-3B9B-3FBB-2920-2BA878B0E1D3">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
 <generatorID>CC7BD542-33ED-1E19-6BA8-76312A183797</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
 </engineerTo>
-<referedAttribute>8D81E4CB-E49F-D90A-C6AA-A4DA7C9AF734</referedAttribute>
+<referedAttribute>2681C668-0A47-8A30-E9D5-CD49641CD8FB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo habitacion id" id="20DC8908-093B-B28C-CC89-6619FDBAACDE">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>66078E57-381E-3720-280D-E8B42685D0E3</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<referedAttribute>2807ABF9-F8B2-9EA5-CF25-7637C228B336</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reserva id" id="B62F1434-FC5E-125E-C424-CE1F16878984">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>8032AA87-3B4B-6E9D-2648-BECED3421370</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<referedAttribute>D7B323FA-4976-8782-9C3B-AF899D8396E0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -61,17 +100,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D8EF2668-CAC6-4B2B-94AC-2DB61410FDA8" name="Habitaciones PKv1">
+<identifier id="D8EF2668-CAC6-4B2B-94AC-2DB61410FDA8" name="Habitaciones_PK">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 14:55:19 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D9A39A76-CCDD-A35F-8CCC-3255DE145AB4</attributeRef>
-<attributeRef>D5AB3585-999F-158E-AE18-AE2F6112A3A7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

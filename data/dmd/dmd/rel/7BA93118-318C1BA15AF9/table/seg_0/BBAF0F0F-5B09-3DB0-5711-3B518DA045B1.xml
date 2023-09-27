@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBAF0F0F-5B09-3DB0-5711-3B518DA045B1" name="Bares">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>8D1D6F14-6829-F4A0-52EB-89663CE47BC3</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="estilo" id="5E5E9B6A-61B9-DA94-C709-99065C2DE8D6">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>002366F8-AA10-8993-9E91-C12E8D701B8F</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="Jazz" description=""/>
+<valueDef value="Karaoke" description=""/>
+<valueDef value="Moderna" description=""/>
+<valueDef value="Rock" description=""/>
+<valueDef value="Taberna" description=""/>
+<valueDef value="Tradicional" description=""/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="96E6102E-37E6-32AB-9DA2-24B746F583FB">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>FB1B4694-1393-198B-81AE-4C637541AECD</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF6573FA-1AFC-DE42-2F4B-32D7FBAC12B3" referredColumn="12F48CED-F8B5-C3EE-1B48-801AD052384E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83C346A7-0D8D-95D3-A791-E83E9378E221" name="Bares_PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>6381C308-0A62-6D2A-B5E9-AD5AD5A825C1</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96E6102E-37E6-32AB-9DA2-24B746F583FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0C36603-EBCE-67C6-C3CC-F75B34DC7873" name="Bares_Servicios_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>E4046E0B-B143-0D89-6B9A-C38B93AC6CC6</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96E6102E-37E6-32AB-9DA2-24B746F583FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0C4782F-EC8B-F6AC-142F-B9066FA6BB89" name="Tipos_habitaciones">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0C4782F-EC8B-F6AC-142F-B9066FA6BB89" name="Tipos habitaciones">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 14:16:46 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -22,16 +22,16 @@
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>55</dataTypeSize>
 <listOfValues>
-<valueDef value="LARGA_ESTADIA" description=""/>
-<valueDef value="PROMOCION" description=""/>
-<valueDef value="TIEMPO_COMPARTIDO" description=""/>
-<valueDef value="TODO_INCLUIDO" description=""/>
+<valueDef value="Doble" description=""/>
+<valueDef value="Familiar" description=""/>
+<valueDef value="Sencilla" description=""/>
+<valueDef value="Suite" description=""/>
+<valueDef value="Suite Presidencial" description=""/>
 </listOfValues>
 <ownDataTypeParameters>55,,</ownDataTypeParameters>
 </Attribute>
@@ -42,24 +42,52 @@
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dotacion" id="DC7C558F-C1C2-1353-EE4A-3D1E0358BB67">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:43:49 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15</dataTypeSize>
-<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="2807ABF9-F8B2-9EA5-CF25-7637C228B336">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>72862CA6-31B1-7098-A99E-F7851AC8A4F8</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="3EDAB174-1362-E672-BD06-BF1F3178EDD2" name="Tipos_habitaciones PK">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-25 14:58:08 UTC</createdTime>
+<identifier id="56D55FB1-2C86-FD20-23E0-5A0F8FE5B60C" name="Tipos habitaciones PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>8E13ED7F-D6B1-6488-AC61-DF7073C8FA3A</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="false"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>2807ABF9-F8B2-9EA5-CF25-7637C228B336</attributeRef>
+</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

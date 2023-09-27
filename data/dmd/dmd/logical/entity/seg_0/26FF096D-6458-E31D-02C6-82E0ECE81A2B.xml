@@ -29,7 +29,7 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipo_Documento" id="E2DEECD0-BA22-A338-9F1E-15C76C7B8D05">
+<Attribute name="tipo Documento" id="E2DEECD0-BA22-A338-9F1E-15C76C7B8D05">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 14:12:47 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -46,10 +46,11 @@
 <valueDef value="CE" description=""/>
 <valueDef value="NIT" description=""/>
 <valueDef value="PASAPORTE" description=""/>
+<valueDef value="TI" description=""/>
 </listOfValues>
 <ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="numero_Documento" id="8FD07D56-DA33-DCB4-E18A-3A0224C523FC">
+<Attribute name="numDoc" id="8FD07D56-DA33-DCB4-E18A-3A0224C523FC">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 14:14:47 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -58,9 +59,8 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>25</dataTypeSize>
-<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="rol" id="468BFBCA-F024-CFEE-A63E-CC2F1292056F">
 <createdBy>pabluchenko</createdBy>
@@ -94,8 +94,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="BD22BEC7-8F4D-3FEA-35FB-9DA6B758F7CC">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>FCA131FF-D5D5-620A-8EB3-225E9AEC9D2A</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -109,7 +122,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>8FD07D56-DA33-DCB4-E18A-3A0224C523FC</attributeRef>
+<attributeRef>BD22BEC7-8F4D-3FEA-35FB-9DA6B758F7CC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

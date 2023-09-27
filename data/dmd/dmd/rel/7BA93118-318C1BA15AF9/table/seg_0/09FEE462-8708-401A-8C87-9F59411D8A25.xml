@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09FEE462-8708-401A-8C87-9F59411D8A25" name="Reuniones">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>44A7599B-9E95-D943-7B60-78A19DC87E1F</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="capacidad" id="05701A8C-509B-FB1B-A2EE-9683740DB1F8">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>404FA824-5E13-CA2D-8702-3042EA042A81</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costoAdicional" id="538FF7F2-FE5E-FDE1-8AAB-95DD7F2F54B9">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>4FD6DA4F-633F-3BB6-B514-ECE07D1A764A</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="0F53E768-675C-289B-CE83-A93EF0517302">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>5AB79CE3-7F31-E4AE-997D-DD57126949BE</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="5FC33C36-6397-77FB-E1DD-BBEBE5B02E96">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>7E91EB6E-765D-11EB-BA5A-59856A5E3941</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duracion" id="194D525F-6020-25BF-D082-B09759062320">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>7AB90049-9D1D-7E00-392E-CD93D0D5915B</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="9BC73952-1BAB-C4BB-52CE-65668875D877">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>FB1B4694-1393-198B-81AE-4C637541AECD</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="099D4A22-C3C9-F1A9-19D9-4AE8E944385C" referredColumn="12F48CED-F8B5-C3EE-1B48-801AD052384E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA681506-7C8A-6E6F-05F7-A3AC2320AD1C" name="Reuniones_PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>6381C308-0A62-6D2A-B5E9-AD5AD5A825C1</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BC73952-1BAB-C4BB-52CE-65668875D877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B2CEA5C-BDF2-0335-513A-82E01446577C" name="Reuniones_Servicios_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>7B92FFA0-50CB-72A3-B6DC-61ADCC107DA8</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BC73952-1BAB-C4BB-52CE-65668875D877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

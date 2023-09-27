@@ -21,17 +21,18 @@
 <colAssociation fkAssociation="974D9BCE-5B87-2C72-D350-DA50EC5111E4" referredColumn="FCA131FF-D5D5-620A-8EB3-225E9AEC9D2A"/>
 </associations>
 </Column>
-<Column name="habitacion_id" id="9A3B2059-6085-0C45-40B3-8DC071D4F35E">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-26 15:36:41 UTC</createdTime>
+<Column name="habitacionesNumero" id="BC2D864A-DE21-B885-229D-4BBF2B20C89A">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:51:59 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="D5BBA3B3-929E-1AC1-08EE-1CF47961C5C3" referredColumn="86D2D702-3DCD-6EA6-C2F6-9C3167736699"/>
+<colAssociation fkAssociation="D5BBA3B3-929E-1AC1-08EE-1CF47961C5C3" referredColumn="FB77C87D-67CA-9675-3986-196A07D9031F"/>
 </associations>
 </Column>
 </columns>
@@ -45,7 +46,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F4BD1BE9-3554-870C-1CCE-AA024BA2334A"/>
-<colUsage columnID="9A3B2059-6085-0C45-40B3-8DC071D4F35E"/>
+<colUsage columnID="BC2D864A-DE21-B885-229D-4BBF2B20C89A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="1E0888BC-C151-00BC-C6D1-11F299C8016F" name="Ocupadas_Habitaciones_FK">
@@ -56,7 +57,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9A3B2059-6085-0C45-40B3-8DC071D4F35E"/>
+<colUsage columnID="BC2D864A-DE21-B885-229D-4BBF2B20C89A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="56037B9B-1D2D-D341-CAEA-2BA88CFD43C3" name="Ocupadas_Usuarios_FK">

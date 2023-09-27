@@ -23,16 +23,16 @@
 <createdTime>2023-09-26 15:35:12 UTC</createdTime>
 <generatorID>45232C73-19B2-8B42-6275-413439FE4EBA</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>55</dataTypeSize>
 <listOfValues>
-<valueDef value="LARGA_ESTADIA" description=""/>
-<valueDef value="PROMOCION" description=""/>
-<valueDef value="TIEMPO_COMPARTIDO" description=""/>
-<valueDef value="TODO_INCLUIDO" description=""/>
+<valueDef value="Doble" description=""/>
+<valueDef value="Familiar" description=""/>
+<valueDef value="Sencilla" description=""/>
+<valueDef value="Suite" description=""/>
+<valueDef value="Suite Presidencial" description=""/>
 </listOfValues>
 <ownDataTypeParameters>55,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -42,11 +42,22 @@
 <createdTime>2023-09-26 15:35:12 UTC</createdTime>
 <generatorID>039BE754-C72E-35A2-B5E0-159719A2F636</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dotacion" id="9DB19BF8-C047-4584-EF78-3C611F7BA9C8">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:51:59 UTC</createdTime>
+<generatorID>DC7C558F-C1C2-1353-EE4A-3D1E0358BB67</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

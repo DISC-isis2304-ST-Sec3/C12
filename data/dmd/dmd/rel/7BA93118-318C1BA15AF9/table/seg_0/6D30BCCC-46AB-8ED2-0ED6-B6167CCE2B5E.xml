@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D30BCCC-46AB-8ED2-0ED6-B6167CCE2B5E" name="Tienda">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>66728CAF-1987-ABF2-078D-AFE877F51462</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo" id="7D8B5354-C17B-E4CC-8DBA-9CAC4EFA4E43">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>51F796C7-C56F-BED1-B7B3-403A79030609</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="Joyeria" description=""/>
+<valueDef value="Moda" description=""/>
+<valueDef value="Souvenirs" description=""/>
+<valueDef value="Supermercado" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="2E2D5BA2-91B3-7AA5-6F35-8E5F3D8BE3CD">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>FB1B4694-1393-198B-81AE-4C637541AECD</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB86A3E1-83D4-AF2D-14E3-0682BCB6D260" referredColumn="12F48CED-F8B5-C3EE-1B48-801AD052384E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE09F636-9652-B873-BC9E-0623BD31684E" name="Tienda_PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>6381C308-0A62-6D2A-B5E9-AD5AD5A825C1</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E2D5BA2-91B3-7AA5-6F35-8E5F3D8BE3CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76F45B30-DFCF-C423-053F-DF7553DB19AA" name="Tienda_Servicios_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>B1BEC74F-1571-0438-A234-2F04DBB75F8A</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E2D5BA2-91B3-7AA5-6F35-8E5F3D8BE3CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

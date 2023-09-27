@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C46048B-9898-1054-1EAC-06E029A65CBF" name="Cartav1">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Restaurantes_id" id="15BF161C-3EBC-C161-0349-F82DED297AC4">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="407C9763-CEEA-C211-D7D4-EB1A43C4ABD7" referredColumn="FB624E0B-140D-9A7B-08BA-BE62637EFE69"/>
+</associations>
+</Column>
+<Column name="Productos_nombre" id="E05903F5-3A79-2981-DA4B-5F7F5EA5590F">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6A234AB-B352-CFEF-1F1E-CA5E412B8AAD" referredColumn="8DC79C15-2B34-676C-9A23-786D59F600EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA24C6CF-8554-7B0A-D76B-BF9A139FDBF7" name="Cartav1_PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15BF161C-3EBC-C161-0349-F82DED297AC4"/>
+<colUsage columnID="E05903F5-3A79-2981-DA4B-5F7F5EA5590F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CFCAED9-097D-6F7B-938F-A15F1F4E01BF" name="Cartav1_Restaurantes_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>B563ADB0-1CEC-EFC6-CDFC-25F4DB1721E9</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15BF161C-3EBC-C161-0349-F82DED297AC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD08CFF4-6E58-F541-2DF3-05290237AB7A" name="Cartav1_Productos_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 05:25:42 UTC</createdTime>
+<generatorID>B563ADB0-1CEC-EFC6-CDFC-25F4DB1721E9</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E05903F5-3A79-2981-DA4B-5F7F5EA5590F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
