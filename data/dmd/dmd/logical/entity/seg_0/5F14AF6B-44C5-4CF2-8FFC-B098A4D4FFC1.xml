@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F14AF6B-44C5-4CF2-8FFC-B098A4D4FFC1" name="Restaurantes">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F14AF6B-44C5-4CF2-8FFC-B098A4D4FFC1" name="Bar_Restaurantes">
 <createdBy>orteg</createdBy>
 <createdTime>2023-09-27 04:44:49 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -35,6 +35,22 @@
 <valueDef value="Oriental" description=""/>
 </listOfValues>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="69F589AC-8E1C-2CE3-3099-64FA0B8C064B">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:31:00 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="BAR" description=""/>
+<valueDef value="RESTAURANTE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

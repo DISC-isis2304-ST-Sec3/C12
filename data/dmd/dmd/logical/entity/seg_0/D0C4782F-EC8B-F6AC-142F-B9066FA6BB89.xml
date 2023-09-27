@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0C4782F-EC8B-F6AC-142F-B9066FA6BB89" name="Tipos habitaciones">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0C4782F-EC8B-F6AC-142F-B9066FA6BB89" name="Tipos_Habitaciones">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 14:16:46 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
