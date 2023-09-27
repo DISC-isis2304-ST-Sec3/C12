@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECA53402-3E50-6C23-F417-8CA48EEAA6A5" name="Cuentas">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<ownerDesignName>e_r</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="habitacion_id" id="4542BBA2-2C37-0A16-5BBE-CC48F463345E">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:36:41 UTC</createdTime>
+<ownerDesignName>e_r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="955BFBAA-D760-DC9A-5FC7-86C3337480F2" referredColumn="86D2D702-3DCD-6EA6-C2F6-9C3167736699"/>
+</associations>
+</Column>
+<Column name="servicio_id" id="CB7A1AB1-6FFC-433E-4792-E0CB92A14F0E">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:41:05 UTC</createdTime>
+<ownerDesignName>e_r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D7271AC-8599-0D2D-5D13-FDCD055E0A4D" referredColumn="12F48CED-F8B5-C3EE-1B48-801AD052384E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2D5B339-E220-E8E4-9EA2-4AB7E46CD42B" name="Cuentas_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<ownerDesignName>e_r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4542BBA2-2C37-0A16-5BBE-CC48F463345E"/>
+<colUsage columnID="CB7A1AB1-6FFC-433E-4792-E0CB92A14F0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F21F8BF6-C681-5925-CABA-67CD4DDB5CAD" name="Cuentas_Habitaciones_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>195D3ADC-9723-F147-235C-0839C72DB313</generatorID>
+<ownerDesignName>e_r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4542BBA2-2C37-0A16-5BBE-CC48F463345E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="345F3964-987A-F32B-BD06-C7E6D21F6356" name="Cuentas_Servicios_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>195D3ADC-9723-F147-235C-0839C72DB313</generatorID>
+<ownerDesignName>e_r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB7A1AB1-6FFC-433E-4792-E0CB92A14F0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
