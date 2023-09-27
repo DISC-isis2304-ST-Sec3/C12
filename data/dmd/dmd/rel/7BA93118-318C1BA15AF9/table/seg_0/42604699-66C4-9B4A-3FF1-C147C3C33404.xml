@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42604699-66C4-9B4A-3FF1-C147C3C33404" name="Habitaciones">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>E0AF25EE-C6A5-3BD5-C949-68592887A759</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="86D2D702-3DCD-6EA6-C2F6-9C3167736699">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:36:41 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="FB77C87D-67CA-9675-3986-196A07D9031F">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>D9A39A76-CCDD-A35F-8CCC-3255DE145AB4</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="disponible" id="A6588FE1-3B4C-AF75-D17E-3A00238EC93C">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>918BE707-AB11-0EFB-C647-B2E9179C31C4</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="NO" description=""/>
+<valueDef value="SI" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hotel_id" id="FA1ACA13-3D22-3720-F3D5-02118A9B1239">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:39:20 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75F09874-0C82-84A9-F465-E0DDA594A1F3" referredColumn="7E355740-FF13-B356-F12A-B2AD5B6D72CE"/>
+</associations>
+</Column>
+<Column name="tipo_habitacion_id" id="A438DDDF-593A-C2FC-0326-2B6A8117DF57">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:40:02 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="611F71FD-F01C-BE2E-C389-F3F8E4C4DD9B" referredColumn="72862CA6-31B1-7098-A99E-F7851AC8A4F8"/>
+</associations>
+</Column>
+<Column name="reserva_id" id="5D51C8F0-C428-6523-ECBF-126E11A31FD0">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:40:45 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AD6388D-BA33-63D1-51CE-34EE9B2F73B7" referredColumn="563DFE6C-0A9E-01D7-4F21-DDE6755CA080"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19436C5F-0C62-10E3-AD99-6C281519441D" name="Habitaciones_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>D8EF2668-CAC6-4B2B-94AC-2DB61410FDA8</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86D2D702-3DCD-6EA6-C2F6-9C3167736699"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B6DACC9-E915-9AE7-E5D1-A0B2357CACEF" name="Habitaciones_Tipos_habitaciones_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>66078E57-381E-3720-280D-E8B42685D0E3</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A438DDDF-593A-C2FC-0326-2B6A8117DF57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16145631-B223-1F26-E897-EC4342D4244D" name="Habitaciones_Hoteles_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>CC7BD542-33ED-1E19-6BA8-76312A183797</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA1ACA13-3D22-3720-F3D5-02118A9B1239"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7B2A406-814C-18C3-58AE-C9DA3A36095D" name="Habitaciones_Reservas_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>8032AA87-3B4B-6E9D-2648-BECED3421370</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D51C8F0-C428-6523-ECBF-126E11A31FD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

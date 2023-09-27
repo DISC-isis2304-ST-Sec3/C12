@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0A2F3A8-A050-03E2-2004-1C8FC1CC9760" name="Usuarios">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>26FF096D-6458-E31D-02C6-82E0ECE81A2B</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FCA131FF-D5D5-620A-8EB3-225E9AEC9D2A">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:45 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="1E1E3B97-2DB3-0E08-D13C-F4DCB31DA2C5">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>11756EF5-3B66-521F-33E0-FF7FFC3CDABF</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_Documento" id="609ACC6E-07A6-1923-744A-893ABD877360">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>E2DEECD0-BA22-A338-9F1E-15C76C7B8D05</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<listOfValues>
+<valueDef value="CC" description=""/>
+<valueDef value="CE" description=""/>
+<valueDef value="NIT" description=""/>
+<valueDef value="PASAPORTE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_Documento" id="AAD5EFF4-FA53-A1D0-D725-04A9B8421B20">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>8FD07D56-DA33-DCB4-E18A-3A0224C523FC</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rol" id="DF8A1CA7-0B28-D913-3932-36BE0A7A9AC8">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>468BFBCA-F024-CFEE-A63E-CC2F1292056F</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<listOfValues>
+<valueDef value="ADMINISTRADOR" description=""/>
+<valueDef value="CLIENTE" description=""/>
+<valueDef value="EMPLEADO" description=""/>
+<valueDef value="GERENTE" description=""/>
+<valueDef value="RECEPCIONISTA" description=""/>
+</listOfValues>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="95146615-B013-37FD-5A5A-572A1A70EF4D">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>CFC46985-7197-C4FD-FA64-F053D2B88C1C</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC0A8D61-0890-9872-19E4-F75720269E47" name="Usuarios_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>C1A640B1-DF36-DDB0-F902-BAEA40F514AC</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCA131FF-D5D5-620A-8EB3-225E9AEC9D2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D512466C-4E72-889F-D66E-E3B879BA7692" name="Servicios">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:57:39 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="horario_Servicio_Inicial" id="4AA7051C-3281-BC18-9A27-258CD2875A06">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:58:33 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horario_Servicio_final" id="33D8574A-5B63-2770-542A-1E822B042610">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 15:00:08 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="15BB5F33-F09E-453B-DD26-AF2696728451" name="Servicios PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:57:49 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

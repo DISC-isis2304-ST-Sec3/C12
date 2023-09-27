@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C607E1B-B6FF-6244-1369-CFFA0C7D694A" name="Servicios">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>D512466C-4E72-889F-D66E-E3B879BA7692</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="12F48CED-F8B5-C3EE-1B48-801AD052384E">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:41:05 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horario_Servicio_Inicial" id="A90EDEDA-07EF-EEA5-A93F-CE759B482978">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>4AA7051C-3281-BC18-9A27-258CD2875A06</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horario_Servicio_final" id="F389F462-3248-91E0-2023-4FCBBD9E8E70">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>33D8574A-5B63-2770-542A-1E822B042610</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reserva_id" id="2EC8D6E2-66E2-6716-3051-D75F6AE6F315">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:40:45 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C92DA20-CC35-0BB6-01AC-6857097F7EBB" referredColumn="563DFE6C-0A9E-01D7-4F21-DDE6755CA080"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9395C930-89BB-DA99-DD56-72AC843F8455" name="Servicios_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:12 UTC</createdTime>
+<generatorID>15BB5F33-F09E-453B-DD26-AF2696728451</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12F48CED-F8B5-C3EE-1B48-801AD052384E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="572C7DAB-1C2C-2E48-2C25-629F7CDF6F08" name="Servicios_Reservas_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-26 15:35:13 UTC</createdTime>
+<generatorID>5332B67A-7495-ED25-472D-6A2CFFD1FAAB</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EC8D6E2-66E2-6716-3051-D75F6AE6F315"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
