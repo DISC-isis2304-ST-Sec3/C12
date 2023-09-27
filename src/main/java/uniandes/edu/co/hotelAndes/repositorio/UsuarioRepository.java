@@ -29,4 +29,10 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
     void actualizarUsuario(@Param("id") long id, @Param("nombre") String nombre, @Param("tipo_Documento") String tipo_Documento,
                            @Param("numero_Documento") long numero_Documento, @Param("rol") String rol, @Param("correo") String correo);
 
+    @Modifying
+    @Transactional
+    @Query(value = "DELETE FROM USUARIOS WHERE id = :id", nativeQuery = true)
+    void eliminarUsuario(@Param("id") long id);
+
+
 }
