@@ -8,6 +8,19 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4FD45D03-09AC-01C7-3D2C-CB9EF2A4ADF8">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
 <Column name="nombre" id="F29A4F47-BF50-4E58-8EEE-A1FFB3D99303">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
@@ -30,19 +43,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Productos_ID" id="4FD45D03-09AC-01C7-3D2C-CB9EF2A4ADF8">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:32:14 UTC</createdTime>
-<ownerDesignName>dmd</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
-<identityColumn>true</identityColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<isSurrogateColumn>true</isSurrogateColumn>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

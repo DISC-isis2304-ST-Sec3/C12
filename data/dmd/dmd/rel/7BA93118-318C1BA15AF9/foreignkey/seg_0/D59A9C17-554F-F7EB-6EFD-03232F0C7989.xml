@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="00F2B0AB-478B-21AD-43BD-B397E2C1C40C" containerWithKeyObject="9B3B1B42-C650-47F5-42C2-B70928D2955F" localFKIndex="EEBD074F-C66B-5F0F-3168-40E7A45F3CA1" name="Bar_Productos_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D59A9C17-554F-F7EB-6EFD-03232F0C7989" containerWithKeyObject="1CEA7DD0-F7DF-D856-34C8-90565DBCE35E" localFKIndex="5F983D20-76A7-9D9D-0598-12FE6F898318" name="Tienda_Productos_FK">
 <createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:32:14 UTC</createdTime>
-<generatorID>AB75F4ED-40C4-60AB-FABA-9C4C7745698B</generatorID>
+<createdTime>2023-09-27 14:45:02 UTC</createdTime>
+<generatorID>CB088AA5-01A3-4193-0A3C-593F76D85D28</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
 <referredTableLongName>Productos</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
