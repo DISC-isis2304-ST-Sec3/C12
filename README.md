@@ -1,10 +1,9 @@
 # C12
 
-# Integrantes:
-
-  -
-  -
-  -
+## Integrantes:
+- Pablo Junco
+- Juan Diego Ortega
+- Daniel Clavijo
 
 ## MODELO UML:
 
