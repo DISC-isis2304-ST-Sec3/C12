@@ -3,10 +3,7 @@ package uniandes.edu.co.hotelAndes.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.ui.Model;
 import uniandes.edu.co.hotelAndes.modelo.Usuario;
@@ -54,6 +51,13 @@ public class UsuariosController {
     public String usuarioEditarGuardar(@PathVariable("id") long id, @ModelAttribute Usuario user) {
 
         usuarioRepository.actualizarUsuario( id, user.getNombre(), user.getTipoDocumento(), user.getNumeroDocumento(), user.getRol(), user.getCorreo());
+        return "redirect:/usuarios";
+    }
+
+    @GetMapping("/usuarios/{id}/delete")
+    public String usuarioBorrar(@PathVariable("id") long id) {
+
+        usuarioRepository.eliminarUsuario(id);
         return "redirect:/usuarios";
     }
 
