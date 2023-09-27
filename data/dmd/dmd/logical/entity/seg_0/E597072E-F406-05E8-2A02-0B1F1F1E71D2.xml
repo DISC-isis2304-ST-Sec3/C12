@@ -22,7 +22,6 @@
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -32,6 +31,19 @@
 <Attribute name="nit" id="8D81E4CB-E49F-D90A-C6AA-A4DA7C9AF734">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 13:52:41 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="2681C668-0A47-8A30-E9D5-CD49641CD8FB">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>7E355740-FF13-B356-F12A-B2AD5B6D72CE</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
 <engineerTo>
 <item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
@@ -53,7 +65,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>8D81E4CB-E49F-D90A-C6AA-A4DA7C9AF734</attributeRef>
+<attributeRef>2681C668-0A47-8A30-E9D5-CD49641CD8FB</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

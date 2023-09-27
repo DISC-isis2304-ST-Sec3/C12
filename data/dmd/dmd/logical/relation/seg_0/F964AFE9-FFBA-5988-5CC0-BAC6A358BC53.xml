@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_24" directorySegmentName="seg_0" id="F964AFE9-FFBA-5988-5CC0-BAC6A358BC53">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Planes consumo Hoteles FK" directorySegmentName="seg_0" id="F964AFE9-FFBA-5988-5CC0-BAC6A358BC53">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-25 15:23:40 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -8,7 +8,7 @@
 </engineerTo>
 <sourceTransferable>false</sourceTransferable>
 <sourcePk>8C7F82B5-4071-F77A-C24B-AFC1D772EF9A</sourcePk>
-<identifying>true</identifying>
+<identifying>false</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

@@ -46,20 +46,20 @@
 <valueDef value="CE" description=""/>
 <valueDef value="NIT" description=""/>
 <valueDef value="PASAPORTE" description=""/>
+<valueDef value="TI" description=""/>
 </listOfValues>
 <ownDataTypeParameters>25,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="numero_Documento" id="AAD5EFF4-FA53-A1D0-D725-04A9B8421B20">
+<Column name="numDoc" id="AAD5EFF4-FA53-A1D0-D725-04A9B8421B20">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-26 15:35:12 UTC</createdTime>
 <generatorID>8FD07D56-DA33-DCB4-E18A-3A0224C523FC</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>25</dataTypeSize>
-<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="rol" id="DF8A1CA7-0B28-D913-3932-36BE0A7A9AC8">
@@ -91,8 +91,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
