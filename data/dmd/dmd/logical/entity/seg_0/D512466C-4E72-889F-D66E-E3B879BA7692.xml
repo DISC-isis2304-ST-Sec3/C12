@@ -111,7 +111,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="reserva id" id="14927711-8AB6-EACD-689F-8BAEFCC07654">
+<Attribute name="Reservas id" id="14927711-8AB6-EACD-689F-8BAEFCC07654">
 <createdBy>orteg</createdBy>
 <createdTime>2023-09-27 04:08:35 UTC</createdTime>
 <generatorID>5332B67A-7495-ED25-472D-6A2CFFD1FAAB</generatorID>

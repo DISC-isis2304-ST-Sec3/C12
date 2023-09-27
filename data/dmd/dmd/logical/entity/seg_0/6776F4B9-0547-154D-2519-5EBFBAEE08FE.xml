@@ -51,7 +51,7 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id" id="413EDD3C-1647-7B8E-222C-C57DB84FE616">
+<Attribute name="SPAs id" id="413EDD3C-1647-7B8E-222C-C57DB84FE616">
 <createdBy>orteg</createdBy>
 <createdTime>2023-09-27 05:20:06 UTC</createdTime>
 <generatorID>55E68E29-9D56-990A-890F-7C88A875910C</generatorID>

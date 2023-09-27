@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="657B1F82-98AC-5627-E531-79290CB72722" name="Tipos_Habitaciones">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>D0C4782F-EC8B-F6AC-142F-B9066FA6BB89</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo" id="7E62F724-FD92-BC79-CD65-CE8F55C25982">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>45232C73-19B2-8B42-6275-413439FE4EBA</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<listOfValues>
+<valueDef value="Doble" description=""/>
+<valueDef value="Familiar" description=""/>
+<valueDef value="Sencilla" description=""/>
+<valueDef value="Suite" description=""/>
+<valueDef value="Suite Presidencial" description=""/>
+</listOfValues>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad" id="BECAC1D6-0838-D6D5-2646-0B07CF2CC9DD">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>039BE754-C72E-35A2-B5E0-159719A2F636</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dotacion" id="D3835E74-A771-AD82-5F70-964E6723EF48">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>DC7C558F-C1C2-1353-EE4A-3D1E0358BB67</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="E6D9D55A-F86D-119B-24E1-DA4066CF9B48">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>2807ABF9-F8B2-9EA5-CF25-7637C228B336</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF169D83-8610-D9FD-AC5E-2E49E645E9D5" name="Tipos_Habitaciones_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>56D55FB1-2C86-FD20-23E0-5A0F8FE5B60C</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6D9D55A-F86D-119B-24E1-DA4066CF9B48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

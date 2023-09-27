@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6129813-14E7-8C25-936B-2C51481C5060" name="Habitaciones">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>E0AF25EE-C6A5-3BD5-C949-68592887A759</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero" id="1C8C6427-053F-0AD0-96A1-A7FDE7ABAF2E">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>D9A39A76-CCDD-A35F-8CCC-3255DE145AB4</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="disponible" id="2A8CF630-6857-2B75-5328-B272821AB73B">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>918BE707-AB11-0EFB-C647-B2E9179C31C4</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="NO" description=""/>
+<valueDef value="SI" description=""/>
+</listOfValues>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precioNoche" id="24D16CC9-925F-F579-3B6D-B6FF4F516F29">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>D8D3981E-5493-4535-FCDF-BD53F068C5CF</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hoteles_id" id="FD2E1D12-1557-CF43-3232-613020E8ECD1">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>5C6B44C8-3B9B-3FBB-2920-2BA878B0E1D3</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76114AA2-0EB5-E1B4-C1D5-A067FCC686E2" referredColumn="A5F13690-7C93-84B8-0E60-BAC89B89A2CE"/>
+</associations>
+</Column>
+<Column name="Tipos_Habitaciones_id" id="A49AAA37-29AC-472E-E43E-B0B015DD7CAE">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>20DC8908-093B-B28C-CC89-6619FDBAACDE</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BF3B524-A469-0167-245C-7E8CAFDECDDF" referredColumn="E6D9D55A-F86D-119B-24E1-DA4066CF9B48"/>
+</associations>
+</Column>
+<Column name="Reservas_id" id="3AB76529-B46E-60E3-7ADC-3068E22AC5FF">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>B62F1434-FC5E-125E-C424-CE1F16878984</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5445FAC-8546-3EEF-00B0-6CDC3A6AF6EA" referredColumn="041EB208-50BF-99EA-B97B-DFFBDE3B3AF0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0EC661AF-3FC2-44F5-935A-0DACC01024DB" name="Habitaciones_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>D8EF2668-CAC6-4B2B-94AC-2DB61410FDA8</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C8C6427-053F-0AD0-96A1-A7FDE7ABAF2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE68C074-835F-B197-FB81-2F23E5EB005E" name="Habitaciones__IDX">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8032AA87-3B4B-6E9D-2648-BECED3421370</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3AB76529-B46E-60E3-7ADC-3068E22AC5FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72F9957D-0358-0C40-0C20-C0C828A71AA8" name="Habitaciones_Hoteles_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>CC7BD542-33ED-1E19-6BA8-76312A183797</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD2E1D12-1557-CF43-3232-613020E8ECD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03BE0D36-6A5C-DF72-B50C-A406E81F1A85" name="Habitaciones_Reservas_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>8032AA87-3B4B-6E9D-2648-BECED3421370</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AB76529-B46E-60E3-7ADC-3068E22AC5FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F4419C3-32B9-9CE8-DBE2-2AC4FD748E9C" name="Habitaciones_Tipos_Habitaciones_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>66078E57-381E-3720-280D-E8B42685D0E3</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A49AAA37-29AC-472E-E43E-B0B015DD7CAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

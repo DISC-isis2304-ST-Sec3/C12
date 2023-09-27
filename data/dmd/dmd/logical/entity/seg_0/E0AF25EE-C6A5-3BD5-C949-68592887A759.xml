@@ -56,7 +56,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="hotel id" id="5C6B44C8-3B9B-3FBB-2920-2BA878B0E1D3">
+<Attribute name="Hoteles id" id="5C6B44C8-3B9B-3FBB-2920-2BA878B0E1D3">
 <createdBy>orteg</createdBy>
 <createdTime>2023-09-27 04:08:35 UTC</createdTime>
 <generatorID>CC7BD542-33ED-1E19-6BA8-76312A183797</generatorID>
@@ -70,7 +70,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipo habitacion id" id="20DC8908-093B-B28C-CC89-6619FDBAACDE">
+<Attribute name="Tipos habitaciones id" id="20DC8908-093B-B28C-CC89-6619FDBAACDE">
 <createdBy>orteg</createdBy>
 <createdTime>2023-09-27 04:08:35 UTC</createdTime>
 <generatorID>66078E57-381E-3720-280D-E8B42685D0E3</generatorID>
@@ -84,7 +84,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="reserva id" id="B62F1434-FC5E-125E-C424-CE1F16878984">
+<Attribute name="Reservas id" id="B62F1434-FC5E-125E-C424-CE1F16878984">
 <createdBy>orteg</createdBy>
 <createdTime>2023-09-27 04:08:35 UTC</createdTime>
 <generatorID>8032AA87-3B4B-6E9D-2648-BECED3421370</generatorID>
