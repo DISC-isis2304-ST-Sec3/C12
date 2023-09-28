@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Hotel</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+
+</head>
+<body>
+</br>
+<form th:action="@{/hoteles/new/save}" method="post">
+    <div th:replace="~{fragments/hotelForm :: hotelForm(titulo='Crear hotel')}">
+    </div>
+</form>
+</body>
+</html>
