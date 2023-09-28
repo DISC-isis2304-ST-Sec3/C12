@@ -37,21 +37,10 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="descuento1" id="2689CF71-09D3-3200-F4A5-FD1CABD788C7">
+<Column name="descuento" id="2689CF71-09D3-3200-F4A5-FD1CABD788C7">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
 <generatorID>5F2DD466-21FE-1AB4-FCB6-86FDDED33C53</generatorID>
-<ownerDesignName>dmd</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT021</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="descuento2" id="14D49E1A-A53A-EE67-A351-6F848AB9E7B6">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:32:14 UTC</createdTime>
-<generatorID>F8009D36-0BF4-81A6-AC4D-DCE2264714E8</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

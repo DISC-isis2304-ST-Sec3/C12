@@ -20,22 +20,6 @@ ALTER TABLE bares
 
 ALTER TABLE bares ADD CONSTRAINT bares_pk PRIMARY KEY ( id );
 
-CREATE TABLE carta (
-                       bares_id         NUMBER NOT NULL,
-                       productos_nombre VARCHAR2(100) NOT NULL
-);
-
-ALTER TABLE carta ADD CONSTRAINT carta_pk PRIMARY KEY ( bares_id,
-                                                        productos_nombre );
-
-CREATE TABLE cartav1 (
-                         restaurantes_id  NUMBER NOT NULL,
-                         productos_nombre VARCHAR2(100) NOT NULL
-);
-
-ALTER TABLE cartav1 ADD CONSTRAINT cartav1_pk PRIMARY KEY ( restaurantes_id,
-                                                            productos_nombre );
-
 CREATE TABLE conferencias (
                               capacidad NUMBER NOT NULL,
                               fecha     DATE,
@@ -170,12 +154,8 @@ CREATE TABLE servicios (
                            reservas_id    NUMBER NOT NULL,
                            nombre         VARCHAR2(63) NOT NULL,
                            costo          NUMBER NOT NULL,
-                           cargado        VARCHAR2
---  ERROR: VARCHAR2 size not specified
-                                                 NOT NULL,
-                           existe         VARCHAR2
---  ERROR: VARCHAR2 size not specified
-                                                 NOT NULL
+                           cargado        VARCHAR2(5) NOT NULL,
+                           existe         VARCHAR2(5) NOT NULL
 );
 
 ALTER TABLE servicios
@@ -201,9 +181,7 @@ CREATE TABLE spas (
 ALTER TABLE spas ADD CONSTRAINT spas_pk PRIMARY KEY ( id );
 
 CREATE TABLE tienda (
-                        tipo VARCHAR2
---  ERROR: VARCHAR2 size not specified
-                                    NOT NULL,
+                        tipo VARCHAR2(20) NOT NULL,
                         id   NUMBER NOT NULL
 );
 
@@ -228,7 +206,7 @@ CREATE TABLE usuarios (
                           id             NUMBER NOT NULL,
                           nombre         VARCHAR2(50),
                           tipo_documento VARCHAR2(25),
-                          numdoc         NUMBER NOT NULL,
+                          numero_documento NUMBER NOT NULL,
                           rol            VARCHAR2(25),
                           correo         VARCHAR2(40)
 );
@@ -242,9 +220,7 @@ ALTER TABLE usuarios
 ALTER TABLE usuarios ADD CONSTRAINT usuarios_pk PRIMARY KEY ( id );
 
 CREATE TABLE utensilio (
-                           devuelto VARCHAR2
---  ERROR: VARCHAR2 size not specified
-                                           NOT NULL,
+                           devuelto VARCHAR2(5) NOT NULL,
                            estado   VARCHAR2(255) NOT NULL,
                            id       NUMBER NOT NULL
 );
@@ -258,21 +234,6 @@ ALTER TABLE bares
     ADD CONSTRAINT bares_servicios_fk FOREIGN KEY ( id )
         REFERENCES servicios ( id );
 
-ALTER TABLE carta
-    ADD CONSTRAINT carta_bares_fk FOREIGN KEY ( bares_id )
-        REFERENCES bares ( id );
-
-ALTER TABLE carta
-    ADD CONSTRAINT carta_productos_fk FOREIGN KEY ( productos_nombre )
-        REFERENCES productos ( nombre );
-
-ALTER TABLE cartav1
-    ADD CONSTRAINT cartav1_productos_fk FOREIGN KEY ( productos_nombre )
-        REFERENCES productos ( nombre );
-
-ALTER TABLE cartav1
-    ADD CONSTRAINT cartav1_restaurantes_fk FOREIGN KEY ( restaurantes_id )
-        REFERENCES restaurantes ( id );
 
 ALTER TABLE conferencias
     ADD CONSTRAINT conferencias_servicios_fk FOREIGN KEY ( id )

@@ -3,7 +3,9 @@ package uniandes.edu.co.hotelAndes.modelo;
 
 import jakarta.persistence.*;
 
+
 @Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Table(name = "servicios")
 public class Servicio {
 
@@ -19,13 +21,26 @@ public class Servicio {
     @JoinColumn(name = "reserva_id", referencedColumnName = "id")
     private Reserva reserva_id;
 
+    private String nombre;
+
+    private String costo;
+
+    private String cargado;
+
+    private String existe;
+
     public Servicio() {;}
 
-    public Servicio(String horarioInicial, String horarioFinal, Reserva reserva_id) {
+    public Servicio(String horarioInicial, String horarioFinal, Reserva reserva_id, String nombre, String costo, String cargado, String existe) {
         this.horarioInicial = horarioInicial;
         this.horarioFinal = horarioFinal;
         this.reserva_id = reserva_id;
+        this.nombre = nombre;
+        this.costo = costo;
+        this.cargado = cargado;
+        this.existe = existe;
     }
+
 
     public long getId() {
         return id;
@@ -59,6 +74,38 @@ public class Servicio {
         this.reserva_id = reserva_id;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCosto() {
+        return costo;
+    }
+
+    public void setCosto(String costo) {
+        this.costo = costo;
+    }
+
+    public String getCargado() {
+        return cargado;
+    }
+
+    public void setCargado(String cargado) {
+        this.cargado = cargado;
+    }
+
+    public String getExiste() {
+        return existe;
+    }
+
+    public void setExiste(String existe) {
+        this.existe = existe;
+    }
+
     @Override
     public String toString() {
         return "Servicio{" +
@@ -66,6 +113,10 @@ public class Servicio {
                 ", horarioInicial='" + horarioInicial + '\'' +
                 ", horarioFinal='" + horarioFinal + '\'' +
                 ", reserva_id=" + reserva_id +
+                ", nombre='" + nombre + '\'' +
+                ", costo='" + costo + '\'' +
+                ", cargado='" + cargado + '\'' +
+                ", existe='" + existe + '\'' +
                 '}';
     }
 }
