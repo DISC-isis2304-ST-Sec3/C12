@@ -5,29 +5,29 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="planes_consumo")
-public class Plan_consumo {
+public class PlanConsumo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String tipoPlan;
+    private String tipoplan;
 
     private Float descuento;
 
     @ManyToOne
-    @JoinColumn(name="hotel_id", referencedColumnName = "id")
-    private Hotel hotel_id;
+    @JoinColumn(name="hoteles_id", referencedColumnName = "id")
+    private Hotel hoteles_id;
 
     private float descuento1;
 
-    public Plan_consumo(){;}
+    public PlanConsumo(){;}
 
-    public Plan_consumo(long id, String tipoPlan, Float descuento, Hotel hotel_id) {
+    public PlanConsumo(long id, String tipoPlan, Float descuento, Hotel hotel_id) {
         this.id = id;
-        this.tipoPlan = tipoPlan;
+        this.tipoplan = tipoPlan;
         this.descuento = descuento;
-        this.hotel_id = hotel_id;
+        this.hoteles_id = hotel_id;
     }
 
     public long getId() {
@@ -38,12 +38,12 @@ public class Plan_consumo {
         this.id = id;
     }
 
-    public String getTipoPlan() {
-        return tipoPlan;
+    public String getTipoplan() {
+        return tipoplan;
     }
 
-    public void setTipoPlan(String tipoPlan) {
-        this.tipoPlan = tipoPlan;
+    public void setTipoplan(String tipoPlan) {
+        this.tipoplan = tipoPlan;
     }
 
     public Float getDescuento() {
@@ -55,11 +55,11 @@ public class Plan_consumo {
     }
 
     public Hotel getHotel_id() {
-        return hotel_id;
+        return hoteles_id;
     }
 
     public void setHotel_id(Hotel hotel_id) {
-        this.hotel_id = hotel_id;
+        this.hoteles_id = hotel_id;
     }
 
     public float getDescuento1() {
@@ -74,9 +74,9 @@ public class Plan_consumo {
     public String toString() {
         return "Plan_consumo{" +
                 "id=" + id +
-                ", tipoPlan='" + tipoPlan + '\'' +
+                ", tipoPlan='" + tipoplan + '\'' +
                 ", descuento=" + descuento +
-                ", hotel_id=" + hotel_id +
+                ", hotel_id=" + hoteles_id +
                 ", descuento1=" + descuento1 +
                 '}';
     }
