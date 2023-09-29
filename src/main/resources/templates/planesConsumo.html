@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lista de planes de consumo</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+    <script th:src="@{/css/jquery.min.js}"></script>
+    <script th:src="@{/css/bootstrap.min.js}"></script>
+</head>
+
+<body>
+<h1 class="text-center">Lista de Planes de consumo</h1>
+
+<table class="table table-hover table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th>id</th>
+        <th>tipoplan</th>
+        <th>descuento</th>
+        <th>id hotel</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <th:block th:each="plan : ${planesConsumo}">
+        <tr>
+            <td th:text="${plan.id}"></td>
+            <td th:text="${plan.tipoplan}"></td>
+            <td th:text="${plan.descuento}"></td>
+            <td th:text="${plan.hotel_id.getNit()}"></td>
+
+            <td>
+                <a th:href="@{planesConsumo/{id}/edit(id=${plan.id})}">Editar</a>
+                <a th:href="@{planesConsumo/{id}/delete(id=${plan.id})}"
+                   onclick="return confirm('¿Estás seguro de borrar este plan de consumo?')">Borrar</a>
+            </td>
+        </tr>
+
+</table>
+<div>
+    <a th:href='@{planesConsumo/new}' class="btn btn-primary">Añadir Plan de Consumo</a>
+    <a th:href='@{/}' class="btn btn-primary">Volver Atrás</a>
+</div>
+<br />
+
+</div>
+</body>
+
+</html>
