@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="849251EE-3C19-2F59-922D-ADAB7468FD1F" name="Utensilio">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="849251EE-3C19-2F59-922D-ADAB7468FD1F" name="Utensilios">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
 <generatorID>DC971D1E-B85E-D379-CCA0-6E8257C212CB</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
+<ordsAlias>utensilio</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -16,11 +17,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
 <listOfValues>
 <valueDef value="NO" description=""/>
 <valueDef value="SI" description=""/>
 </listOfValues>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="estado" id="3F542F91-DD75-2F42-3080-4D0B54BC054A">
@@ -40,6 +42,7 @@
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
 <generatorID>FB1B4694-1393-198B-81AE-4C637541AECD</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -56,6 +59,7 @@
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
 <generatorID>6381C308-0A62-6D2A-B5E9-AD5AD5A825C1</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

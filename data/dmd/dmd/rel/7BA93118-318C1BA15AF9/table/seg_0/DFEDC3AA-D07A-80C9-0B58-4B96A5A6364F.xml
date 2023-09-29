@@ -8,6 +8,17 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="06F52B01-8C3E-A0AE-E2B3-E2771E6ABF43">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>BD22BEC7-8F4D-3FEA-35FB-9DA6B758F7CC</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="nombre" id="B0135A40-FEBA-DA39-71EE-F1F7ADB81397">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
@@ -41,7 +52,7 @@
 <ownDataTypeParameters>25,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="numDoc" id="EEC1DA01-295D-8A2A-B050-F89F6AA72515">
+<Column name="numero_Documento" id="EEC1DA01-295D-8A2A-B050-F89F6AA72515">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
 <generatorID>8FD07D56-DA33-DCB4-E18A-3A0224C523FC</generatorID>
@@ -83,17 +94,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id" id="06F52B01-8C3E-A0AE-E2B3-E2771E6ABF43">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:32:14 UTC</createdTime>
-<generatorID>BD22BEC7-8F4D-3FEA-35FB-9DA6B758F7CC</generatorID>
-<ownerDesignName>dmd</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

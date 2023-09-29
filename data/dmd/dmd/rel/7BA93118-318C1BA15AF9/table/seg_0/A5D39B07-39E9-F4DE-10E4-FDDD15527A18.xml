@@ -1,13 +1,24 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5D39B07-39E9-F4DE-10E4-FDDD15527A18" name="servicioSpas">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5D39B07-39E9-F4DE-10E4-FDDD15527A18" name="serviciosSpas">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
 <generatorID>6776F4B9-0547-154D-2519-5EBFBAEE08FE</generatorID>
 <ownerDesignName>dmd</ownerDesignName>
+<ordsAlias>serviciospas</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="55141EB7-3135-0DA2-1EAE-530C8117951C">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-28 05:08:16 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="duración" id="5B6C43B5-EC6C-D43D-BF42-DEA82EFC1387">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
@@ -58,6 +69,17 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4BF076F-81B7-E299-F62F-939AC3862F52" name="servicioSpas_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-28 05:08:16 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55141EB7-3135-0DA2-1EAE-530C8117951C"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="FF063713-2105-2AB2-F127-6CC8E7D78BA4" name="servicioSpas_SPAs_FK">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
