@@ -1,13 +1,3 @@
--- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2023-09-27 00:32:45 COT
---   sitio:      Oracle Database 12c
---   tipo:      Oracle Database 12c
-
-
-
--- predefined type, no DDL - MDSYS.SDO_GEOMETRY
-
--- predefined type, no DDL - XMLTYPE
 
 CREATE TABLE bares (
                        estilo VARCHAR2(50) NOT NULL,
@@ -38,13 +28,13 @@ CREATE TABLE cuentas (
 ALTER TABLE cuentas ADD CONSTRAINT cuentas_pk PRIMARY KEY ( servicio_id,
                                                             habitacionesnumero );
 
-CREATE TABLE gimnasio (
+CREATE TABLE gimnasios (
                           capacidad NUMBER NOT NULL,
                           maquinas  VARCHAR2(255) NOT NULL,
                           id        NUMBER NOT NULL
 );
 
-ALTER TABLE gimnasio ADD CONSTRAINT gimnasio_pk PRIMARY KEY ( id );
+ALTER TABLE gimnasios ADD CONSTRAINT gimnasios_pk PRIMARY KEY ( id );
 
 CREATE TABLE habitaciones (
                               numero                NUMBER NOT NULL,
@@ -166,7 +156,7 @@ ALTER TABLE servicios
 
 ALTER TABLE servicios ADD CONSTRAINT servicios_pk PRIMARY KEY ( id );
 
-CREATE TABLE serviciospas (
+CREATE TABLE servicioSpas (
                               duración NUMBER NOT NULL,
                               costo    NUMBER NOT NULL,
                               fecha    DATE NOT NULL,
@@ -247,8 +237,8 @@ ALTER TABLE cuentas
     ADD CONSTRAINT cuentas_servicios_fk FOREIGN KEY ( servicio_id )
         REFERENCES servicios ( id );
 
-ALTER TABLE gimnasio
-    ADD CONSTRAINT gimnasio_servicios_fk FOREIGN KEY ( id )
+ALTER TABLE gimnasios
+    ADD CONSTRAINT gimnasios_servicios_fk FOREIGN KEY ( id )
         REFERENCES servicios ( id );
 
 ALTER TABLE habitaciones
@@ -296,8 +286,8 @@ ALTER TABLE servicios
     ADD CONSTRAINT servicios_reservas_fk FOREIGN KEY ( reservas_id )
         REFERENCES reservas ( id );
 
-ALTER TABLE serviciospas
-    ADD CONSTRAINT serviciospas_spas_fk FOREIGN KEY ( spas_id )
+ALTER TABLE servicioSpas
+    ADD CONSTRAINT servicioSpas_spas_fk FOREIGN KEY ( spas_id )
         REFERENCES spas ( id );
 
 ALTER TABLE spas
@@ -312,46 +302,3 @@ ALTER TABLE utensilio
     ADD CONSTRAINT utensilio_servicios_fk FOREIGN KEY ( id )
         REFERENCES servicios ( id );
 
--- Informe de Resumen de Oracle SQL Developer Data Modeler:
---
--- CREATE TABLE                            23
--- CREATE INDEX                             1
--- ALTER TABLE                             57
--- CREATE VIEW                              0
--- ALTER VIEW                               0
--- CREATE PACKAGE                           0
--- CREATE PACKAGE BODY                      0
--- CREATE PROCEDURE                         0
--- CREATE FUNCTION                          0
--- CREATE TRIGGER                           0
--- ALTER TRIGGER                            0
--- CREATE COLLECTION TYPE                   0
--- CREATE STRUCTURED TYPE                   0
--- CREATE STRUCTURED TYPE BODY              0
--- CREATE CLUSTER                           0
--- CREATE CONTEXT                           0
--- CREATE DATABASE                          0
--- CREATE DIMENSION                         0
--- CREATE DIRECTORY                         0
--- CREATE DISK GROUP                        0
--- CREATE ROLE                              0
--- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          0
--- CREATE MATERIALIZED VIEW                 0
--- CREATE MATERIALIZED VIEW LOG             0
--- CREATE SYNONYM                           0
--- CREATE TABLESPACE                        0
--- CREATE USER                              0
---
--- DROP TABLESPACE                          0
--- DROP DATABASE                            0
---
--- REDACTION POLICY                         0
--- TSDP POLICY                              0
---
--- ORDS DROP SCHEMA                         0
--- ORDS ENABLE SCHEMA                       0
--- ORDS ENABLE OBJECT                       0
---
--- ERRORS                                  15
--- WARNINGS                                 0
