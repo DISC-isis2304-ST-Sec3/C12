@@ -11,8 +11,8 @@ public class Ocupada {
     @EmbeddedId
     private OcupadaPK pk;
 
-    public Ocupada (Habitacion id_habitacion, Usuario id_usuario) {
-        this.pk = new OcupadaPK(id_habitacion, id_usuario);
+    public Ocupada (Habitacion habitacion_id, Usuario usuario_id) {
+        this.pk = new OcupadaPK(habitacion_id, usuario_id);
     }
 
     public Ocupada(){;}

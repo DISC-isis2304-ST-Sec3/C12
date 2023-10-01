@@ -10,33 +10,33 @@ import jakarta.persistence.ManyToOne;
 public class OcupadaPK implements Serializable {
 
     @ManyToOne
-    @JoinColumn(name="id_habitacion", referencedColumnName ="id")
-    private Habitacion id_habitacion;
+    @JoinColumn(name="habitacion_id", referencedColumnName ="id")
+    private Habitacion habitacion_id;
 
     @ManyToOne
-    @JoinColumn(name="id_usuario", referencedColumnName ="id")
-    private Usuario id_usuario;
+    @JoinColumn(name="usuario_id", referencedColumnName ="id")
+    private Usuario usuario_id;
 
-    public OcupadaPK(Habitacion id_habitacion, Usuario id_usuario) {
+    public OcupadaPK(Habitacion habitacion_id, Usuario usuario_id) {
         super();
-        this.id_habitacion = id_habitacion;
-        this.id_usuario = id_usuario;
+        this.habitacion_id = habitacion_id;
+        this.usuario_id = usuario_id;
     }
 
     public Habitacion getId_habitacion() {
-        return id_habitacion;
+        return habitacion_id;
     }
 
     public Usuario getId_usuario() {
-        return id_usuario;
+        return usuario_id;
     }
 
-    public void setId_habitacion(Habitacion id_habitacion) {
-        this.id_habitacion = id_habitacion;
+    public void setId_habitacion(Habitacion habitacion_id) {
+        this.habitacion_id = habitacion_id;
     }
 
-    public void setId_usuario(Usuario id_usuario) {
-        this.id_usuario = id_usuario;
+    public void setId_usuario(Usuario usuario_id) {
+        this.usuario_id = usuario_id;
     }
 
     
