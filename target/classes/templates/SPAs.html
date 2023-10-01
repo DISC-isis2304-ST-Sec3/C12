@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lista de Servicios SPA</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+    <script th:src="@{/css/jquery.min.js}"></script>
+    <script th:src="@{/css/bootstrap.min.js}"></script>
+</head>
+
+<body>
+    <h1 class="text-center">Lista de Servicios SPA</h1>
+
+    <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>id</th>
+                <th>Horario Inicial</th>
+                <th>Horario Final</th>
+                <th>Capacidad</th>
+                <th>Duracion</th>
+                <th>Costo</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <th:block th:each="servicio_spa : ${servicios_spa}">
+            <tr>
+                <td th:text="${servicio_spa.id}"></td>
+                <td th:text="${servicio_spa.horarioInicial}"></td>
+                <td th:text="${servicio_spa.horarioFinal}"></td>
+                <td th:text="${servicio_spa.capacidad}"></td>
+                <td th:text="${servicio_spa.duracion}"></td>
+                <td th:text="${servicio_spa.costo}"></td>
+                <td th:text="${servicio_spa.fecha}"></td>
+                <td th:text="${servicio_spa.hora}"></td>
+
+                <td>
+                    <a th:href="@{servicios_spa/{id}/edit(id=${servicio_spa.id})}">Editar</a>
+                    <a th:href="@{servicios_spa/{id}/delete(id=${servicio_spa.id})}"
+                        onclick="return confirm('¿Estás seguro de borrar este servicio SPA?')">Borrar</a>
+                </td>
+            </tr>
+        </th:block>
+    </table>
+    <div>
+        <a th:href='@{servicios_spa/new}' class="btn btn-primary">Añadir Servicio SPA</a>
+        <a th:href='@{/}' class="btn btn-primary">Volver Atrás</a>
+    </div>
+</body>
+
+</html>
