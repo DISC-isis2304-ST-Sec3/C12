@@ -19,7 +19,6 @@ public class PlanConsumo {
     @JoinColumn(name="hoteles_id", referencedColumnName = "id")
     private Hotel hoteles_id;
 
-    private float descuento1;
 
     public PlanConsumo(){;}
 
@@ -62,13 +61,6 @@ public class PlanConsumo {
         this.hoteles_id = hotel_id;
     }
 
-    public float getDescuento1() {
-        return descuento1;
-    }
-
-    public void setDescuento1(float descuento1) {
-        this.descuento1 = descuento1;
-    }
 
     @Override
     public String toString() {
@@ -77,7 +69,6 @@ public class PlanConsumo {
                 ", tipoPlan='" + tipoplan + '\'' +
                 ", descuento=" + descuento +
                 ", hotel_id=" + hoteles_id +
-                ", descuento1=" + descuento1 +
                 '}';
     }
 }

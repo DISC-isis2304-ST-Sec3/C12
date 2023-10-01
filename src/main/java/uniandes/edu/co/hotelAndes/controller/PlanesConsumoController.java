@@ -31,7 +31,7 @@ public class PlanesConsumoController {
     @PostMapping("/planesConsumo/new/save")
     public String planConsumoGuardar(@ModelAttribute PlanConsumo plan) {
 
-        planesConsumoRepository.insertarPlanConsumo(plan.getTipoplan(), plan.getDescuento(), plan.getHotel_id().getId(), plan.getDescuento1());
+        planesConsumoRepository.insertarPlanConsumo(plan.getTipoplan(), plan.getDescuento(), plan.getHotel_id().getId());
 
         return "redirect:/planesConsumo";
     }

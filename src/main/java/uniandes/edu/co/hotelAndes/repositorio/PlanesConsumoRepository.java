@@ -22,6 +22,6 @@ public interface PlanesConsumoRepository extends JpaRepository<PlanConsumo, Inte
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO planes_consumo (id, tipoplan, descuento, hoteles_id, descuento1) VALUES ( hotel_andes_sequence.nextval, :tipoplan, :descuento, :hoteles_id, :descuento1)", nativeQuery = true)
-    void insertarPlanConsumo(@Param("tipoplan") String tipoplan, @Param("descuento") Float descuento, @Param("hoteles_id") long hoteles_id, @Param("descuento1") float descuento1);
+    void insertarPlanConsumo(@Param("tipoplan") String tipoplan, @Param("descuento") Float descuento, @Param("hoteles_id") long hoteles_id);
 
 }
