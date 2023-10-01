@@ -16,20 +16,17 @@ public class Bar extends Servicio{
     @JoinColumn(name="ServicioID", referencedColumnName = "id")
     private Servicio servicioID;
 
-    @ManyToOne
+    @OneToMany
     @JoinColumn(name="ProductosProductosID", referencedColumnName = "id")
     private Producto productoProductoID;
 
     public Bar(){;}
 
-    public Bar( String estilo, Producto productoProductoID)
+    public Bar(Integer id, String estilo, Producto productoProductoID)
     {
-
+        this.id = id;
         this.estilo = estilo;
         this.productoProductoID = productoProductoID;
     }
-
-
-
 
 }
