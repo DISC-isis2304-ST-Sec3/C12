@@ -5,10 +5,3 @@
 - Juan Diego Ortega
 - Daniel Clavijo
 
-## MODELO UML:
-
-
-
-
-
-## MODELO E/R:
