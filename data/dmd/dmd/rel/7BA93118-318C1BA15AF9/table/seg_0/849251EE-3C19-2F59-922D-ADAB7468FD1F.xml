@@ -17,12 +17,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
+<dataTypeSize>2</dataTypeSize>
 <listOfValues>
 <valueDef value="NO" description=""/>
 <valueDef value="SI" description=""/>
 </listOfValues>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="estado" id="3F542F91-DD75-2F42-3080-4D0B54BC054A">

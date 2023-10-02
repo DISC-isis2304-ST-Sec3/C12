@@ -53,9 +53,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="00F2B0AB-478B-21AD-43BD-B397E2C1C40C" referredColumn="4FD45D03-09AC-01C7-3D2C-CB9EF2A4ADF8"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -81,17 +78,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="43C9509D-BBBB-BBA3-BC74-EEA16B219A09"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="EEBD074F-C66B-5F0F-3168-40E7A45F3CA1" name="Bar_Productos_FK">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:32:14 UTC</createdTime>
-<generatorID>AB75F4ED-40C4-60AB-FABA-9C4C7745698B</generatorID>
-<ownerDesignName>dmd</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="6F000368-69FF-E91A-EEC6-296E4B8B5247"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

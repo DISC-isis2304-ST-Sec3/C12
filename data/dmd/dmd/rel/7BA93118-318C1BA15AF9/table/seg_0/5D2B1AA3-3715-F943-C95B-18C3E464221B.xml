@@ -63,11 +63,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
 <listOfValues>
 <valueDef value="NO" description=""/>
 <valueDef value="SI" description=""/>
 </listOfValues>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="existe" id="815C611D-EF70-7D8B-BCE3-7A985BB0A669">
@@ -78,11 +79,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
 <listOfValues>
 <valueDef value="NO" description=""/>
 <valueDef value="SI" description=""/>
 </listOfValues>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id" id="6C1A5164-05C7-D2B2-98E0-C098AAD5C829">

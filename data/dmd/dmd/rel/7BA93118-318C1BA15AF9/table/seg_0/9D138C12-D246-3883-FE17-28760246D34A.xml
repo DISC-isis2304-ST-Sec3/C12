@@ -45,9 +45,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="1AE41E07-E638-465F-A9BB-B46A97E33980" referredColumn="4FD45D03-09AC-01C7-3D2C-CB9EF2A4ADF8"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -72,17 +69,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="557044B3-8D1E-4946-A438-968EA819B931"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="B4A8FBAA-9541-BBB6-1712-F34D60CFC29D" name="Restaurante_Productos_FK">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:42:17 UTC</createdTime>
-<generatorID>0BBDA163-F113-CACE-5AD9-507D1C6CD97B</generatorID>
-<ownerDesignName>dmd</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B8E2A497-F1DD-2592-36E7-40DCFF04393C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

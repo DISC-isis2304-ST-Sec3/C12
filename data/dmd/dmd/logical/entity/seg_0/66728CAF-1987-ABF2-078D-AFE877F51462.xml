@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="66728CAF-1987-ABF2-078D-AFE877F51462" name="Tienda">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="66728CAF-1987-ABF2-078D-AFE877F51462" name="Tiendas">
 <createdBy>orteg</createdBy>
 <createdTime>2023-09-27 04:47:33 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
@@ -26,13 +26,14 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
 <listOfValues>
 <valueDef value="Joyeria" description=""/>
 <valueDef value="Moda" description=""/>
 <valueDef value="Souvenirs" description=""/>
 <valueDef value="Supermercado" description=""/>
 </listOfValues>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

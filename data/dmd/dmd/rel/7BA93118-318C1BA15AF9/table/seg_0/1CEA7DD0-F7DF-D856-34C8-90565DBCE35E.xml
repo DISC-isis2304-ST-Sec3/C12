@@ -32,29 +32,25 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
+<dataTypeSize>40</dataTypeSize>
 <listOfValues>
 <valueDef value="Joyeria" description=""/>
 <valueDef value="Moda" description=""/>
 <valueDef value="Souvenirs" description=""/>
 <valueDef value="Supermercado" description=""/>
 </listOfValues>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Productos_id" id="FB5FBE18-CFFF-0EA7-4F43-7A6C9B8CCCAE">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:45:02 UTC</createdTime>
+<Column name="Productos_Productos_ID" id="26149109-5CF6-9800-ABDB-6346DC26E77D">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 13:02:24 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D59A9C17-554F-F7EB-6EFD-03232F0C7989" referredColumn="4FD45D03-09AC-01C7-3D2C-CB9EF2A4ADF8"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -80,17 +76,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FCDC293D-B4BC-98DD-7221-81F79BF49306"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="5F983D20-76A7-9D9D-0598-12FE6F898318" name="Tienda_Productos_FK">
-<createdBy>pabluchenko</createdBy>
-<createdTime>2023-09-27 14:45:02 UTC</createdTime>
-<generatorID>CB088AA5-01A3-4193-0A3C-593F76D85D28</generatorID>
-<ownerDesignName>dmd</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="FB5FBE18-CFFF-0EA7-4F43-7A6C9B8CCCAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

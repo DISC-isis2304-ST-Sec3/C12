@@ -44,16 +44,105 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Restaurantes_id" id="7F30327C-C814-23E3-50FF-705206727C4E">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 12:41:03 UTC</createdTime>
+<generatorID>3FB81F7B-B76D-626E-1055-E4CA64735E3E</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A18B4C7E-158C-C482-1ED4-5294DB8A7F12" referredColumn="557044B3-8D1E-4946-A438-968EA819B931"/>
+</associations>
+</Column>
+<Column name="Bares_id" id="5D3A4124-8CBD-E6CA-38FE-6268ED8689F4">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 12:41:03 UTC</createdTime>
+<generatorID>E3F581D4-1D83-90D7-5BC4-658695B74D26</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B4176AE-DEAF-247C-6248-9DBD7402574F" referredColumn="43C9509D-BBBB-BBA3-BC74-EEA16B219A09"/>
+</associations>
+</Column>
+<Column name="Tiendas_id" id="786A6668-5695-F45B-4FEF-B87B4EB5D1A3">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 12:41:03 UTC</createdTime>
+<generatorID>2D1E9A5C-5966-1B1F-9ED9-2C5F531C161B</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DAC419C-E4B4-2F0D-901A-A981010A9AEC" referredColumn="FCDC293D-B4BC-98DD-7221-81F79BF49306"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63053095-B709-397B-08BE-65FF8022B385" name="Productos_nombre_UN">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 12:41:03 UTC</createdTime>
+<generatorID>372FA9AD-1B7B-A3F0-7F64-DF55C71364F1</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F29A4F47-BF50-4E58-8EEE-A1FFB3D99303"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="639992AC-F879-7EDB-3548-84B601D2E350" name="Productos_PK">
 <createdBy>pabluchenko</createdBy>
 <createdTime>2023-09-27 14:32:14 UTC</createdTime>
 <ownerDesignName>dmd</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
+<indexState>Unique Constraint</indexState>
 <indexColumnUsage>
 <colUsage columnID="4FD45D03-09AC-01C7-3D2C-CB9EF2A4ADF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0090DC67-61DF-1B67-1C0E-1C14F6774FEC" name="Productos_Restaurantes_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 12:41:03 UTC</createdTime>
+<generatorID>7A085596-C3F9-622B-EAF1-A401FE1CBC27</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F30327C-C814-23E3-50FF-705206727C4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5815DB6-38A3-13BC-B1EA-C8DCF83B77F9" name="Productos_Bares_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 12:41:03 UTC</createdTime>
+<generatorID>0BBFF3E0-ABF6-414B-5BBA-275C8159B465</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D3A4124-8CBD-E6CA-38FE-6268ED8689F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E621DF2C-327B-95B2-3761-2841347CA30D" name="Productos_Tiendas_FK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-01 12:41:03 UTC</createdTime>
+<generatorID>0EAE343E-0559-6E0B-6E67-746CA76A6993</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="786A6668-5695-F45B-4FEF-B87B4EB5D1A3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
