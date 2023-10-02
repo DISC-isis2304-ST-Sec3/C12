@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="849251EE-3C19-2F59-922D-ADAB7468FD1F" name="Utensilios">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>DC971D1E-B85E-D379-CCA0-6E8257C212CB</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<ordsAlias>utensilio</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="devuelto" id="66E597BA-8FDA-465A-4137-92087AE1A558">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>7A68EC39-B6F5-2774-A2D0-D9186F3577BD</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="NO" description=""/>
+<valueDef value="SI" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="3F542F91-DD75-2F42-3080-4D0B54BC054A">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>F8741CF3-0EAB-5ADA-EA95-0A5EB17922C0</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="51018BE5-9AA0-BFC5-9E8D-4F06EB960925">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>FB1B4694-1393-198B-81AE-4C637541AECD</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="498B4AA0-C9C7-5FB7-0566-53B958BCA99F" referredColumn="6C1A5164-05C7-D2B2-98E0-C098AAD5C829"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2D04BFB-DF7A-27AF-90DA-C783E83BB88D" name="Utensilio_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>6381C308-0A62-6D2A-B5E9-AD5AD5A825C1</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51018BE5-9AA0-BFC5-9E8D-4F06EB960925"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5998948B-7737-9C3C-7F7A-35274C7A1D04" name="Utensilio_Servicios_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>9FF59830-C401-444F-8C6D-9A25021A73A3</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51018BE5-9AA0-BFC5-9E8D-4F06EB960925"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

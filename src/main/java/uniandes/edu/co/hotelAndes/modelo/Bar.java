@@ -16,7 +16,7 @@ public class Bar extends Servicio{
     @JoinColumn(name="ServicioID", referencedColumnName = "id")
     private Servicio servicioID;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name="ProductosProductosID", referencedColumnName = "id")
     private Producto productoProductoID;
 

@@ -28,6 +28,7 @@ public interface HotelRepository extends JpaRepository<Hotel, Integer> {
     @Transactional
     @Query(value = "UPDATE hoteles SET nombre = :nombre, nit = :nit WHERE id = :id", nativeQuery = true)
     void actualizarHotel(@Param("id") long id, @Param("nombre") String nombre, @Param("nit") long nit);
+    
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM hoteles WHERE id = :id", nativeQuery = true)
