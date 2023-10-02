@@ -22,14 +22,11 @@ public class Bar extends Servicio{
 
     public Bar(){;}
 
-    public Bar( String estilo, Producto productoProductoID)
+    public Bar(Integer id, String estilo, Producto productoProductoID)
     {
-
+        this.id = id;
         this.estilo = estilo;
         this.productoProductoID = productoProductoID;
     }
-
-
-
 
 }

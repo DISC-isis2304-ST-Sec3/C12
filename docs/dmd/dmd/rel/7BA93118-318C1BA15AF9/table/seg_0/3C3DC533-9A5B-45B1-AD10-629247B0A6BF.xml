@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C3DC533-9A5B-45B1-AD10-629247B0A6BF" name="Ocupadas">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Habitaciones_numero" id="A593202D-2474-09A0-A3E2-B719F02D0675">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="108685B9-C269-1ACC-A974-A48086D4628B" referredColumn="1C8C6427-053F-0AD0-96A1-A7FDE7ABAF2E"/>
+</associations>
+</Column>
+<Column name="Usuarios_id" id="DB9A8DA6-FC47-DBA1-ED7B-5F6986D1EE24">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD1BED9E-AC14-C3D0-EACE-114888D41142" referredColumn="06F52B01-8C3E-A0AE-E2B3-E2771E6ABF43"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB3C47C1-41A5-79C4-60F2-3F9BC4331BEE" name="Ocupadas_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<ownerDesignName>dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A593202D-2474-09A0-A3E2-B719F02D0675"/>
+<colUsage columnID="DB9A8DA6-FC47-DBA1-ED7B-5F6986D1EE24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46D8A31E-BE73-6E71-7AEF-5FA4C24E7CA5" name="Ocupadas_Habitaciones_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>FCA0DA05-E797-857A-C0F7-D6CD8AD13EDC</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A593202D-2474-09A0-A3E2-B719F02D0675"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF83A1DB-3C6F-9D14-56CE-8C795E90AB58" name="Ocupadas_Usuarios_FK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-27 14:32:14 UTC</createdTime>
+<generatorID>FCA0DA05-E797-857A-C0F7-D6CD8AD13EDC</generatorID>
+<ownerDesignName>dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB9A8DA6-FC47-DBA1-ED7B-5F6986D1EE24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
