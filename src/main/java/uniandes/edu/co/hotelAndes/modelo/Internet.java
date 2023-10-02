@@ -1,5 +1,5 @@
 package uniandes.edu.co.hotelAndes.modelo;
-<<<<<<< Updated upstream
+
 import jakarta.persistence.*;
 import java.util.Date;
 
@@ -34,21 +34,3 @@ public class Internet extends Servicio {
 
 }
 
-
-=======
-
-import jakarta.persistence.*;
-
-@Entity
-@Table(name="internet")
-public class Internet extends Servicio {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-
-    private Integer anchoBanda;
-
-    
-}
->>>>>>> Stashed changes

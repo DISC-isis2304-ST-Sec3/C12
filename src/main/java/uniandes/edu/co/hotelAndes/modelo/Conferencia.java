@@ -1,5 +1,5 @@
 package uniandes.edu.co.hotelAndes.modelo;
-<<<<<<< Updated upstream
+
 import jakarta.persistence.*;
 import java.util.Date;
 
@@ -61,9 +61,4 @@ public class Conferencia extends Servicio {
                 ", duracion=" + duracion +
                 "} " + super.toString();
     }
-=======
-
-public class Conferencia {
-    
->>>>>>> Stashed changes
 }
