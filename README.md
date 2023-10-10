@@ -5,4 +5,4 @@
 - Juan Diego Ortega
 - Daniel Clavijo
 
-Adjunto Archivo Excekl con las contribuciones
+Adjunto Archivo Excel con las contribuciones
