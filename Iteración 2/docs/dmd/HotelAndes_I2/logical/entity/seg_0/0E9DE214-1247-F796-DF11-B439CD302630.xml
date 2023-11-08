@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E9DE214-1247-F796-DF11-B439CD302630" name="cuentas">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-29 17:08:11 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="netocuenta" id="CBA61FC4-98E9-A40F-EF00-E5C58BABB87B">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-29 17:08:17 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idcuenta" id="51B9B50F-3954-3373-C788-597FADA63B13">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-30 03:43:02 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idalojamiento" id="772D1F81-61D1-8B41-69B5-448EC6D7CBFC">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-30 04:56:04 UTC</createdTime>
+<generatorID>98CEC63C-6825-D0D1-B47D-142430635DF6</generatorID>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<referedAttribute>0B2D9C02-7D2E-2231-1A4E-DB42B7791FBC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5CF42DB5-C5CB-A40F-694B-FD536FF0DC51" name="Cuentas PK">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-30 03:43:19 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>51B9B50F-3954-3373-C788-597FADA63B13</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

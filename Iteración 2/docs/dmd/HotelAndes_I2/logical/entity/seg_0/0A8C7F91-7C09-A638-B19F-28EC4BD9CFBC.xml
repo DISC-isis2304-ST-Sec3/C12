@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0A8C7F91-7C09-A638-B19F-28EC4BD9CFBC" name="planes">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:02:08 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tipoplan" id="1C0DEBD8-973A-3E91-B9C6-07823FF69066">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:02:25 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<listOfValues>
+<valueDef value="Larga_Estadia" description=""/>
+<valueDef value="Promo_Particular" description=""/>
+<valueDef value="Tiempo_Compartido" description=""/>
+<valueDef value="Todo_Incluido" description=""/>
+</listOfValues>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descuento" id="5F2DD466-21FE-1AB4-FCB6-86FDDED33C53">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 03:41:12 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idplan" id="9CE377E4-2A8C-3F06-0818-97852BA9508B">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>7AA0DF0D-AE8E-0404-6859-D26267A6EDEA</generatorID>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F16198C1-09ED-E17B-1D1A-4E012D0EBEC6" name="Planes_consumo_PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 15:23:40 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9CE377E4-2A8C-3F06-0818-97852BA9508B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

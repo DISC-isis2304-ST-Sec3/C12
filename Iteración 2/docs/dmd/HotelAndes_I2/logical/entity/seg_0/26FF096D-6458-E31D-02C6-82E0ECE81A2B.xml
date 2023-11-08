@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26FF096D-6458-E31D-02C6-82E0ECE81A2B" name="usuarios">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:12:00 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombreuser" id="11756EF5-3B66-521F-33E0-FF7FFC3CDABF">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:12:25 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipodocuser" id="E2DEECD0-BA22-A338-9F1E-15C76C7B8D05">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:12:47 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<listOfValues>
+<valueDef value="CC" description=""/>
+<valueDef value="CE" description=""/>
+<valueDef value="NIT" description=""/>
+<valueDef value="PASAPORTE" description=""/>
+<valueDef value="TI" description=""/>
+</listOfValues>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numdocuser" id="8FD07D56-DA33-DCB4-E18A-3A0224C523FC">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:14:47 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correouser" id="CFC46985-7197-C4FD-FA64-F053D2B88C1C">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:16:29 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="iduser" id="BD22BEC7-8F4D-3FEA-35FB-9DA6B758F7CC">
+<createdBy>orteg</createdBy>
+<createdTime>2023-09-27 04:08:35 UTC</createdTime>
+<generatorID>FCA131FF-D5D5-620A-8EB3-225E9AEC9D2A</generatorID>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idalojamiento" id="AF60DEC5-5F62-A460-949C-D344F87401D9">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-30 04:56:04 UTC</createdTime>
+<generatorID>EA582AE9-B6F6-2E1F-D83B-7A8D30777EC3</generatorID>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<referedAttribute>0B2D9C02-7D2E-2231-1A4E-DB42B7791FBC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C1A640B1-DF36-DDB0-F902-BAEA40F514AC" name="Usuarios PK">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 14:12:23 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD22BEC7-8F4D-3FEA-35FB-9DA6B758F7CC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

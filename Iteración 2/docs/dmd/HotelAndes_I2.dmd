@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="HotelAndes_I2" id="AE1784C6-93E4-26F6-6E1A-B2005DB2308D" version="3.5">
+<createdBy>pabluchenko</createdBy>
+<createdTime>2023-09-25 13:45:11 UTC</createdTime>
+<ownerDesignName>e_r</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>AE1784C6-93E4-26F6-6E1A-B2005DB2308D</designId>
+</OSDM_Design>

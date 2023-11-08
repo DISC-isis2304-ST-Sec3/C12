@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_26" directorySegmentName="seg_0" id="DFF85BBD-BF41-B7D0-1107-20A25C339D64">
+<createdBy>orteg</createdBy>
+<createdTime>2023-10-29 17:39:05 UTC</createdTime>
+<ownerDesignName>HotelAndes_I2</ownerDesignName>
+<engineerTo>
+<item key="7BA93118-9A88-7FB0-56FD-318C1BA15AF9" value="true"/>
+</engineerTo>
+<sourcePk>5CF42DB5-C5CB-A40F-694B-FD536FF0DC51</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0E9DE214-1247-F796-DF11-B439CD302630</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7F718D18-7DDD-678D-4FC7-572EF053C114</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>
