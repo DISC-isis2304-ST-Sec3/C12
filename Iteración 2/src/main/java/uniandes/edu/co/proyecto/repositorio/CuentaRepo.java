@@ -17,8 +17,8 @@ public interface CuentaRepo extends JpaRepository <Cuenta, Integer> {
     // Creation
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO cuentas (idcuenta, netocuenta, alojamiento) VALUES (parranderos_sequence.nextval, :netocuenta, :alojamiento)", nativeQuery = true)
-    void insertarCuenta(@Param("netocuenta") Integer netocuenta, @Param("alojamiento") Alojamiento alojamiento);
+    @Query(value = "INSERT INTO cuentas (netocuenta, idcuenta, idalojamiento) VALUES (:netocuenta, parranderos_sequence.nextval ,:idalojamiento)", nativeQuery = true)
+    void insertarCuenta(@Param("netocuenta") Integer netocuenta,@Param("idalojamiento") Alojamiento idalojamiento);
 
 
     // Read
@@ -32,14 +32,14 @@ public interface CuentaRepo extends JpaRepository <Cuenta, Integer> {
     // Update
     @Modifying
     @Transactional
-    @Query(value = "UPDATE cuentas SET netocuenta=:netocuenta, alojamiento=:alojamiento WHERE idcuenta = :idcuenta", nativeQuery = true)
-    void actualizarCuenta(@Param("idcuenta") int idcuenta, @Param("netocuenta") Integer netocuenta, @Param("alojamiento") Alojamiento alojamiento);
+    @Query(value = "UPDATE cuentas SET netocuenta=:netocuenta, idalojamiento=:idalojamiento WHERE idcuenta = :idcuenta", nativeQuery = true)
+    void actualizarCuenta( @Param("netocuenta") Integer netocuenta, @Param("idcuenta") int idcuenta, @Param("idalojamiento") Alojamiento idalojamiento);
 
 
     // Delete
     @Modifying
     @Transactional
-    @Query(value = "DELETE FROM cuentas WHERE idcuenta =: idcuenta", nativeQuery = true)
+    @Query(value = "DELETE FROM cuentas WHERE idcuenta = :idcuenta", nativeQuery = true)
     void eliminarCuenta(@Param("idcuenta") int idcuenta);
 
 }
