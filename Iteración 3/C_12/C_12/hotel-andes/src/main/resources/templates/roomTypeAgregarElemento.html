@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Elemento</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+
+</head>
+<body>
+    <br>
+
+
+    <div class="container border border-2 w-25">    
+    <h3 class="text-center">Añadir elemento a RoomType</h3>
+    <br>
+
+    <form th:action="@{/room_types/{id}/add_element/save}" method="post" th:object="${roomElement}">
+        <input type="hidden" th:field="*{name}" th:value="${roomType.name}" />
+        
+        <label class="col-form-label" for="name">Element Name:</label>
+        <input type="text" id="name" name="name" th:field="*{name}" required th:value="${roomElement.name}" />
+        <br>
+        <br>
+
+        <label class="col-form-label" for="cost">Element Cost:</label>
+        <input type="number" id="cost" name="cost" th:field="*{cost}" required th:value="${roomElement.cost}"/>
+        <br><br>
+
+        <div class="text-center">
+            <input type="submit" value="Guardar" class="btn btn-primary">
+            <a th:href="@{/room_types}" class="btn btn-primary">Cancelar</a>
+            </div>
+        </br>
+    </form>
+    </div>
+
+</body>
+</html>

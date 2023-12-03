@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <title>Usuarios Por Servicio</title>
+</head>
+<body>
+    <div th:replace="~{fragments/navBar}"></div>
+
+    <div class="container mt-5 container-fluid">
+        <h3>Usuarios Por Servicio</h3>
+        <div class="container w-25">
+            <div class="card border border-2 mx-auto">
+                <div class="card-body">
+                    <form th:action="@{/usersServicio}" method="get">
+                        <label class="col-form-label" for="idServicio">Nombre del Servicio:</label>
+                        <input class="form-control" type="text" id="idServicio" name="idServicio" required placeholder="Servicio"><br>
+
+                        <label class="col-form-label" for="fechaInicio">Fecha Inicio (MM/DD/YYYY):</label>
+                        <input class="form-control" type="date" id="fechaInicio" name="fechaInicio" required placeholder="MM/DD/YYYY"><br>
+
+                        <label class="col-form-label" for="fechaFinal">Fecha Final (MM/DD/YYYY):</label>
+                        <input class="form-control" type="date" id="fechaFinal" name="fechaFinal" required placeholder="MM/DD/YYYY"><br>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-secondary">Buscar Usuarios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de ordenación -->
+        <div class="text-center my-3">
+            <a href="#" class="btn btn-info" role="button" th:href="@{/usersServicio(idServicio=${param.idServicio}, fechaInicio=${param.fechaInicio}, fechaFinal=${param.fechaFinal}, sort='asc')}">Ordenar Ascendente Cantidad</a>
+            <a href="#" class="btn btn-info" role="button" th:href="@{/usersServicio(idServicio=${param.idServicio}, fechaInicio=${param.fechaInicio}, fechaFinal=${param.fechaFinal}, sort='desc')}">Ordenar Descendente Cantidad</a>
+            <a href="#" class="btn btn-info" role="button" th:href="@{/usersServicio(idServicio=${param.idServicio}, fechaInicio=${param.fechaInicio}, fechaFinal=${param.fechaFinal}, sort='ascU')}">Ordenar Ascendente Usuario</a>
+            <a href="#" class="btn btn-info" role="button" th:href="@{/usersServicio(idServicio=${param.idServicio}, fechaInicio=${param.fechaInicio}, fechaFinal=${param.fechaFinal}, sort='descU')}">Ordenar Descendente Usuario</a>
+        </div>
+
+        <div class="text-center my-3">
+            <a href="#" class="btn btn-info" role="button" th:href="@{/usersServicio(idServicio=${param.idServicio}, fechaInicio=${param.fechaInicio}, fechaFinal=${param.fechaFinal}, sort='ascF')}">Ordenar Ascendente Fecha</a>
+            <a href="#" class="btn btn-info" role="button" th:href="@{/usersServicio(idServicio=${param.idServicio}, fechaInicio=${param.fechaInicio}, fechaFinal=${param.fechaFinal}, sort='descF')}">Ordenar Descendente Fecha</a>
+        </div>
+
+        
+
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Usuario</th>
+                    <th>Primera Reserva</th>
+                    <th>Ultima Reserva</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="userS: ${usersServicio}">
+                    <td th:text="${userS.getNombre()}">Nombre de usuario</td>
+                    <td th:text="${userS.getPrimera_reserva()}">Primera Reserva</td>
+                    <td th:text="${userS.getUltima_reserva()}">Ultima</td>
+                    <td th:text="${userS.getCantidad()}">Cantidad</td>
+                </tr>
+            </tbody>
+        </table>
+        <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+    </div>
+</body>
+</html>

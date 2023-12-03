@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    
+
+    <title>Buenos usuarios</title>
+</head>
+<body>
+
+    <div th:replace="~{fragments/navBar}"></div>
+
+    <div>
+        
+        <div class="container mt-5">
+
+        <a th:href="@{/users}" class="btn btn-secondary mb-4">Volver Atrás</a>
+        <h1>Lista de buenos usuarios</h1>
+
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre de usuario</th>
+                    <th>Nombre</th>
+                    <th>Dinero gastado</th>
+                    <th>Fecha de ingreso</th>
+                    <th>Fecha de salida</th>
+                    <th>Cantidad de dias hospedado</th>
+                </tr>
+            </thead>
+
+
+            <th:block th:each="buenUser: ${buenosUsers}">
+                <tr>
+                    <td th:text="${buenUser.getName()}"></td>
+                    <td th:text="${buenUser.getUser_id()}"></td>
+                    <td th:text="${buenUser.getBill()}"></td>
+                    <td th:text="${buenUser.getEntry_date()}"></td>
+                    <td th:text="${buenUser.getDeparture_date()}"></td>
+                    <td th:text="${buenUser.getCANTIDAD_DE_DIAS()}"></td>
+
+                </tr>
+                
+            </th:block>
+
+        </table>
+        <a th:href="@{/users}" class="btn btn-primary">Volver Atrás</a>
+
+    </div>
+        
+    </div>
+</body>
+</html>

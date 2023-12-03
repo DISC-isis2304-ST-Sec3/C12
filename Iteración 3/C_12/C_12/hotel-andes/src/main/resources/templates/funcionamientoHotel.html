@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <title>Funcionamiento del Hotel</title>
+</head>
+<body>
+    <div th:replace="~{fragments/navBar}"></div>
+    <div class="container mt-5">
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col col-auto">
+                <a th:href="@{/}" class="btn btn-secondary"> Volver Atrás</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Estadísticas Semanales del Hotel</h2>
+    <br>
+
+    <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Semana</th>
+                <th>Servicio más Consumido</th>
+                <th>Servicio menos Consumido</th>
+                <th>Habitación más Solicitada</th>
+                <th>Habitación menos Solicitada</th>
+            </tr>
+        </thead>
+
+
+        <th:block th:each="semana: ${funcionamientoHotel}">
+            <tr>
+                <td th:text="${semana.getSemana()}"></td>
+                <td th:text="${semana.getServicio_Mas_Consumido()}"></td>
+                <td th:text="${semana.getServicio_Menos_Consumido()}"></td>
+                <td th:text="${semana.getHabitacion_Mas_Solicitada()}"></td>
+                <td th:text="${semana.getHabitacion_Menos_Solicitada()}"></td>
+
+            </tr>
+            
+        </th:block>
+
+    </table>
+    <a th:href="@{/}" class="btn btn-primary"> Volver Atrás</a>
+
+</div>
+    
+</div>
+    
+</body>
+</html>
