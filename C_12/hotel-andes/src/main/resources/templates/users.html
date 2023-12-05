@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    
+
+    <title>Usuarios</title>
+</head>
+<body>
+
+    <div th:replace="~{fragments/navBar}"></div>
+
+    <div>
+        <div class="container mt-5">
+
+            <h2>Informacion de los usuarios</h2>
+
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col col-auto">
+                        <a th:href="@{/}" class="btn btn-secondary"> Volver Atrás</a>
+                    </div>
+                    <div class="col-auto">
+                        <a th:href="@{/buenosUsers}" class="btn btn-primary mb-4">Buenos usuarios</a>
+                    </div>
+                </div>
+            </div>
+
+        <h1>Lista de usuarios</h1>
+
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Nombre de usuario</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+
+
+            <th:block th:each="user: ${users}">
+                <tr>
+                    <td th:text="${user.getName()}"></td>
+                    <td th:text="${user.getUser()}"></td>
+                    <td th:text="${user.getEmail()}"></td>
+
+
+                </tr>
+                
+            </th:block>
+
+        </table>
+        <a th:href="@{/}" class="btn btn-primary"> Volver Atrás</a>
+
+    </div>
+        
+    </div>
+</body>
+</html>

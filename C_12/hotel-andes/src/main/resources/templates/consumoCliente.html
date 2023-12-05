@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <title>ConsumosCliente</title>
+</head>
+<body>
+    <div th:replace="~{fragments/navBar}"></div>
+
+    <div class="container mt-5 container-fluid">
+        <h3>Consumos Por Cliente</h3>
+        <div class="container w-25">
+            <div class="card border border-2 mx-auto">
+                <div class="card-body">
+                    <form th:action="@{/consumoCliente}" method="get">
+                        <label class="col-form-label" for="usuario">Usuario del Cliente:</label>
+                        <input class="form-control" type="text" id="usuario" name="usuario" required placeholder="Usuario"><br>
+
+                        <label class="col-form-label" for="fechaInicio">Fecha Inicio (MM/DD/YYYY):</label>
+                        <input class="form-control" type="text" id="fechaInicio" name="fechaInicio" required placeholder="MM/DD/YYYY"><br>
+
+                        <label class="col-form-label" for="fechaFinal">Fecha Final (MM/DD/YYYY):</label>
+                        <input class="form-control" type="text" id="fechaFinal" name="fechaFinal" required placeholder="MM/DD/YYYY"><br>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-secondary">Buscar Consumos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Fecha Consumo</th>
+                    <th>Habitación</th>
+                    <th>Costo</th>
+                    <th>Servicio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="consumptionU: ${consumoCliente}">
+                    <td th:text="${consumptionU.getService_date()}">Fecha de Consumo</td>
+                    <td th:text="${consumptionU.getRoom()}">Número Habitación</td>
+                    <td th:text="${consumptionU.getCost()}">Costo de Consumo</td>
+                    <td th:text="${consumptionU.getServiceName()}">Nombre del Servicio</td>
+                </tr>
+            </tbody>
+        </table>
+        <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+    </div>
+</body>
+</html>
