@@ -46,113 +46,131 @@ public interface UserRepository extends MongoRepository<User, String> {
          
      }
 
-    //RQF4
-    @Aggregation(pipeline = {
-        "{ $lookup: { from: 'RoomsReservations', localField: 'user_id', foreignField: 'user_id', as: 'reservations' } }",
-        "{ $unwind: '$reservations' }",
-        "{ $unwind: '$reservations.consumptions' }",
-        "{ $match: { 'reservations.consumptions.date': { $gte: ?0, $lte: ?1 } } }",
-        "{ $lookup: { from: 'Products', localField: 'reservations.consumptions.product', foreignField: '_id', as: 'productDetails' } }",
-        "{ $unwind: '$productDetails' }",
-        "{ $lookup: { from: 'Services', localField: 'productDetails.service', foreignField: '_id', as: 'serviceDetails' } }",
-        "{ $unwind: '$serviceDetails' }",
-        "{ $match: { 'serviceDetails.name': ?2 } }",
-        "{ $group: { nombre: '$name', primera_reserva: { $min: '$reservations.consumptions.date' }, ultima_reserva: { $max: '$reservations.consumptions.date' }, cantidad: { $sum: 1 } } }",
-        "{ $sort: { primera_reserva: 1 } }" 
+   @Aggregation(pipeline = {
+            "{ $addFields: { 'convertedStartDate': { $dateFromString: { dateString: '?0', format: '%Y/%m/%d' } }, 'convertedEndDate': { $dateFromString: { dateString: '?1', format: '%Y/%m/%d' } } } }",
+            "{ $lookup: { from: 'RoomsReservations', localField: '_id', foreignField: 'user', as: 'reservations' } }",
+            "{ $unwind: { path: '$reservations', preserveNullAndEmptyArrays: true } }",
+            "{ $lookup: { from: 'Consumptions', localField: 'reservations.consumptions', foreignField: '_id', as: 'consumptions' } }",
+            "{ $unwind: { path: '$consumptions', preserveNullAndEmptyArrays: true } }",
+            "{ $addFields: { 'consumptionDateConverted': { $dateFromString: { dateString: '$consumptions.date', format: '%Y/%m/%d' } } } }",
+            "{ $match: { $expr: { $and: [ { $gte: ['$consumptionDateConverted', '$convertedStartDate'] }, { $lte: ['$consumptionDateConverted', '$convertedEndDate'] } ] } } }",
+            "{ $lookup: { from: 'Products', localField: 'consumptions.products', foreignField: '_id', as: 'productDetails' } }",
+            "{ $unwind: '$productDetails' }",
+            "{ $lookup: { from: 'Services', localField: 'productDetails._id', foreignField: 'products', as: 'serviceDetails' } }",
+            "{ $unwind: '$serviceDetails' }",
+            "{ $match: { 'serviceDetails.name': ?2 } }",
+            "{ $group: { _id: '$name', primerareserva: { $min: '$consumptionDateConverted' }, ultimareserva: { $max: '$consumptionDateConverted' }, cantidad: { $sum: 1 } } }",
+            "{$project:{_id:1, primerareserva: 1, ultimareserva:1, cantidad:1}}",
+            "{ $sort: { primerareserva: 1 } }"
     })
-    List<RespuestaServicioUsers> darInformacionUsersPorServicioFechaAsc(String startDate, String endDate, String serviceName);
+    List<RespuestaServicioUsers> darInformacionUsersPorServicioFechaAsc(String startDate, String endDate,
+            String serviceName);
 
     @Aggregation(pipeline = {
-        "{ $lookup: { from: 'RoomsReservations', localField: 'user_id', foreignField: 'user_id', as: 'reservations' } }",
-        "{ $unwind: '$reservations' }",
-        "{ $unwind: '$reservations.consumptions' }",
-        "{ $match: { 'reservations.consumptions.date': { $gte: ?0, $lte: ?1 } } }",
-        "{ $lookup: { from: 'Products', localField: 'reservations.consumptions.product', foreignField: '_id', as: 'productDetails' } }",
-        "{ $unwind: '$productDetails' }",
-        "{ $lookup: { from: 'Services', localField: 'productDetails.service', foreignField: '_id', as: 'serviceDetails' } }",
-        "{ $unwind: '$serviceDetails' }",
-        "{ $match: { 'serviceDetails.name': ?2 } }",
-        "{ $group: { _id: '$name', primera_reserva: { $min: '$reservations.consumptions.date' }, ultima_reserva: { $max: '$reservations.consumptions.date' }, cantidad: { $sum: 1 } } }",
-        "{ $sort: { primera_reserva: -1 } }" 
+            "{ $addFields: { 'convertedStartDate': { $dateFromString: { dateString: '?0', format: '%Y/%m/%d' } }, 'convertedEndDate': { $dateFromString: { dateString: '?1', format: '%Y/%m/%d' } } } }",
+            "{ $lookup: { from: 'RoomsReservations', localField: '_id', foreignField: 'user', as: 'reservations' } }",
+            "{ $unwind: { path: '$reservations', preserveNullAndEmptyArrays: true } }",
+            "{ $lookup: { from: 'Consumptions', localField: 'reservations.consumptions', foreignField: '_id', as: 'consumptions' } }",
+            "{ $unwind: { path: '$consumptions', preserveNullAndEmptyArrays: true } }",
+            "{ $addFields: { 'consumptionDateConverted': { $dateFromString: { dateString: '$consumptions.date', format: '%Y/%m/%d' } } } }",
+            "{ $match: { $expr: { $and: [ { $gte: ['$consumptionDateConverted', '$convertedStartDate'] }, { $lte: ['$consumptionDateConverted', '$convertedEndDate'] } ] } } }",
+            "{ $lookup: { from: 'Products', localField: 'consumptions.products', foreignField: '_id', as: 'productDetails' } }",
+            "{ $unwind: '$productDetails' }",
+            "{ $lookup: { from: 'Services', localField: 'productDetails._id', foreignField: 'products', as: 'serviceDetails' } }",
+            "{ $unwind: '$serviceDetails' }",
+            "{ $match: { 'serviceDetails.name': ?2 } }",
+            "{ $group: { _id: '$name', primerareserva: { $min: '$consumptionDateConverted' }, ultimareserva: { $max: '$consumptionDateConverted' }, cantidad: { $sum: 1 } } }",
+            "{$project:{_id:1, primerareserva: 1, ultimareserva:1, cantidad:1}}",
+            "{ $sort: { primerareserva: -1 } }"
     })
-    List<RespuestaServicioUsers> darInformacionUsersPorServicioFechaDesc(String startDate, String endDate, String serviceName);
+    List<RespuestaServicioUsers> darInformacionUsersPorServicioFechaDesc(String startDate, String endDate,
+            String serviceName);
 
     @Aggregation(pipeline = {
-        "{ $lookup: { from: 'RoomsReservations', localField: 'user_id', foreignField: 'user_id', as: 'reservations' } }",
-        "{ $unwind: '$reservations' }",
-        "{ $unwind: '$reservations.consumptions' }",
-        "{ $match: { 'reservations.consumptions.date': { $gte: ?0, $lte: ?1 } } }",
-        "{ $lookup: { from: 'Products', localField: 'reservations.consumptions.product', foreignField: '_id', as: 'productDetails' } }",
-        "{ $unwind: '$productDetails' }",
-        "{ $lookup: { from: 'Services', localField: 'productDetails.service', foreignField: '_id', as: 'serviceDetails' } }",
-        "{ $unwind: '$serviceDetails' }",
-        "{ $match: { 'serviceDetails.name': ?2 } }",
-        "{ $group: { _id: '$name', primera_reserva: { $min: '$reservations.consumptions.date' }, ultima_reserva: { $max: '$reservations.consumptions.date' }, cantidad: { $sum: 1 } } }",
-        "{ $sort: { _id: 1 } }" 
+            "{ $lookup: { from: 'RoomsReservations', localField: '_id', foreignField: 'user', as: 'reservations' } }",
+            "{ $unwind: { path: '$reservations' } }",
+            "{ $lookup: { from: 'Consumptions', localField: 'reservations.consumptions', foreignField: '_id', as: 'consumptions' } }",
+            "{ $unwind: { path: '$consumptions' } }",
+            "{ $match: { 'consumptions.date': { $gte:?0, $lte: ?1 } } }",
+            "{ $lookup: { from: 'Products', localField: 'consumptions.products', foreignField: '_id', as: 'productDetails' } }",
+            "{ $unwind: '$productDetails' }",
+            "{ $lookup: { from: 'Services', localField: 'productDetails._id', foreignField: 'products', as: 'serviceDetails' } }",
+            "{ $unwind: '$serviceDetails' }",
+            "{ $match: { 'serviceDetails.name': ?2 } }",
+            "{ $group: { _id: '$name', primerareserva: { $min: '$consumptions.date' }, ultimareserva: { $max: '$consumptions.date' }, cantidad: { $sum: 1 } } }",
+            "{$project:{_id:1, primerareserva: 1, ultimareserva:1, cantidad:1}}",
+            "{ $sort: { _id: 1 } }"
     })
-    List<RespuestaServicioUsers> darInformacionUsersPorServicioUsuarioAsc(String startDate, String endDate, String serviceName);
-
-
+    List<RespuestaServicioUsers> darInformacionUsersPorServicioUsuarioAsc(String startDate, String endDate,
+            String serviceName);
 
     @Aggregation(pipeline = {
-        "{ $lookup: { from: 'RoomsReservations', localField: 'user_id', foreignField: 'user_id', as: 'reservations' } }",
-        "{ $unwind: '$reservations' }",
-        "{ $unwind: '$reservations.consumptions' }",
-        "{ $match: { 'reservations.consumptions.date': { $gte: ?0, $lte: ?1 } } }",
-        "{ $lookup: { from: 'Products', localField: 'reservations.consumptions.product', foreignField: '_id', as: 'productDetails' } }",
-        "{ $unwind: '$productDetails' }",
-        "{ $lookup: { from: 'Services', localField: 'productDetails.service', foreignField: '_id', as: 'serviceDetails' } }",
-        "{ $unwind: '$serviceDetails' }",
-        "{ $match: { 'serviceDetails.name': ?2 } }",
-        "{ $group: { _id: '$name', primera_reserva: { $min: '$reservations.consumptions.date' }, ultima_reserva: { $max: '$reservations.consumptions.date' }, cantidad: { $sum: 1 } } }",
-        "{ $sort: { _id: -1 } }" 
+            "{ $lookup: { from: 'RoomsReservations', localField: '_id', foreignField: 'user', as: 'reservations' } }",
+            "{ $unwind: { path: '$reservations' } }",
+            "{ $lookup: { from: 'Consumptions', localField: 'reservations.consumptions', foreignField: '_id', as: 'consumptions' } }",
+            "{ $unwind: { path: '$consumptions' } }",
+            "{ $match: { 'consumptions.date': { $gte:?0, $lte: ?1 } } }",
+            "{ $lookup: { from: 'Products', localField: 'consumptions.products', foreignField: '_id', as: 'productDetails' } }",
+            "{ $unwind: '$productDetails' }",
+            "{ $lookup: { from: 'Services', localField: 'productDetails._id', foreignField: 'products', as: 'serviceDetails' } }",
+            "{ $unwind: '$serviceDetails' }",
+            "{ $match: { 'serviceDetails.name': ?2 } }",
+            "{ $group: { _id: '$name', primerareserva: { $min: '$consumptions.date' }, ultimareserva: { $max: '$consumptions.date' }, cantidad: { $sum: 1 } } }",
+            "{$project:{_id:1, primerareserva: 1, ultimareserva:1, cantidad:1}}",
+            "{ $sort: { _id: -1 } }"
     })
-    List<RespuestaServicioUsers> darInformacionUsersPorServicioUsuarioDesc(String startDate, String endDate, String serviceName);
-
+    List<RespuestaServicioUsers> darInformacionUsersPorServicioUsuarioDesc(String startDate, String endDate,
+            String serviceName);
 
     @Aggregation(pipeline = {
-        "{ $lookup: { from: 'RoomsReservations', localField: 'user_id', foreignField: 'user_id', as: 'reservations' } }",
-        "{ $unwind: '$reservations' }",
-        "{ $unwind: '$reservations.consumptions' }",
-        "{ $match: { 'reservations.consumptions.date': { $gte: ?0, $lte: ?1 } } }",
-        "{ $lookup: { from: 'Products', localField: 'reservations.consumptions.product', foreignField: '_id', as: 'productDetails' } }",
-        "{ $unwind: '$productDetails' }",
-        "{ $lookup: { from: 'Services', localField: 'productDetails.service', foreignField: '_id', as: 'serviceDetails' } }",
-        "{ $unwind: '$serviceDetails' }",
-        "{ $match: { 'serviceDetails.name': ?2 } }",
-        "{ $group: { _id: '$name', primera_reserva: { $min: '$reservations.consumptions.date' }, ultima_reserva: { $max: '$reservations.consumptions.date' }, cantidad: { $sum: 1 } } }",
-        "{ $sort: { cantidad: 1 } }" 
+            "{ $lookup: { from: 'RoomsReservations', localField: '_id', foreignField: 'user', as: 'reservations' } }",
+            "{ $unwind: { path: '$reservations' } }",
+            "{ $lookup: { from: 'Consumptions', localField: 'reservations.consumptions', foreignField: '_id', as: 'consumptions' } }",
+            "{ $unwind: { path: '$consumptions' } }",
+            "{ $match: { 'consumptions.date': { $gte:?0, $lte: ?1 } } }",
+            "{ $lookup: { from: 'Products', localField: 'consumptions.products', foreignField: '_id', as: 'productDetails' } }",
+            "{ $unwind: '$productDetails' }",
+            "{ $lookup: { from: 'Services', localField: 'productDetails._id', foreignField: 'products', as: 'serviceDetails' } }",
+            "{ $unwind: '$serviceDetails' }",
+            "{ $match: { 'serviceDetails.name': ?2 } }",
+            "{ $group: { _id: '$name', primerareserva: { $min: '$consumptions.date' }, ultimareserva: { $max: '$consumptions.date' }, cantidad: { $sum: 1 } } }",
+            "{$project:{_id:1, primerareserva: 1, ultimareserva:1, cantidad:1}}",
+            "{ $sort: { cantidad: 1 } }"
     })
-    List<RespuestaServicioUsers> darInformacionUsersPorServicioAsc(String startDate, String endDate, String serviceName);
+    List<RespuestaServicioUsers> darInformacionUsersPorServicioAsc(String startDate, String endDate,
+            String serviceName);
 
     @Aggregation(pipeline = {
-        "{ $lookup: { from: 'RoomsReservations', localField: 'user_id', foreignField: 'user_id', as: 'reservations' } }",
-        "{ $unwind: '$reservations' }",
-        "{ $unwind: '$reservations.consumptions' }",
-        "{ $match: { 'reservations.consumptions.date': { $gte: ?0, $lte: ?1 } } }",
-        "{ $lookup: { from: 'Products', localField: 'reservations.consumptions.product', foreignField: '_id', as: 'productDetails' } }",
-        "{ $unwind: '$productDetails' }",
-        "{ $lookup: { from: 'Services', localField: 'productDetails.service', foreignField: '_id', as: 'serviceDetails' } }",
-        "{ $unwind: '$serviceDetails' }",
-        "{ $match: { 'serviceDetails.name': ?2 } }",
-        "{ $group: { _id: '$name', primera_reserva: { $min: '$reservations.consumptions.date' }, ultima_reserva: { $max: '$reservations.consumptions.date' }, cantidad: { $sum: 1 } } }",
-        "{ $sort: { cantidad: -1 } }" 
+            "{ $lookup: { from: 'RoomsReservations', localField: '_id', foreignField: 'user', as: 'reservations' } }",
+            "{ $unwind: { path: '$reservations' } }",
+            "{ $lookup: { from: 'Consumptions', localField: 'reservations.consumptions', foreignField: '_id', as: 'consumptions' } }",
+            "{ $unwind: { path: '$consumptions' } }",
+            "{ $match: { 'consumptions.date': { $gte:?0, $lte: ?1 } } }",
+            "{ $lookup: { from: 'Products', localField: 'consumptions.products', foreignField: '_id', as: 'productDetails' } }",
+            "{ $unwind: '$productDetails' }",
+            "{ $lookup: { from: 'Services', localField: 'productDetails._id', foreignField: 'products', as: 'serviceDetails' } }",
+            "{ $unwind: '$serviceDetails' }",
+            "{ $match: { 'serviceDetails.name': ?2 } }",
+            "{ $group: { _id: '$name', primerareserva: { $min: '$consumptions.date' }, ultimareserva: { $max: '$consumptions.date' }, cantidad: { $sum: 1 } } }",
+            "{$project:{_id:1, primerareserva: 1, ultimareserva:1, cantidad:1}}",
+            "{ $sort: { cantidad: -1 } }"
     })
-    List<RespuestaServicioUsers> darInformacionUsersPorServicioDesc(String startDate, String endDate, String serviceName);
-
+    List<RespuestaServicioUsers> darInformacionUsersPorServicioDesc(String startDate, String endDate,
+            String serviceName);
 
     @Aggregation(pipeline = {
-        "{ $lookup: { from: 'RoomsReservations', localField: 'user_id', foreignField: 'user_id', as: 'reservations' } }",
-        "{ $unwind: '$reservations' }",
-        "{ $unwind: '$reservations.consumptions' }",
-        "{ $match: { 'reservations.consumptions.date': { $gte: ?0, $lte: ?1 } } }",
-        "{ $lookup: { from: 'Products', localField: 'reservations.consumptions.product', foreignField: '_id', as: 'productDetails' } }",
-        "{ $unwind: '$productDetails' }",
-        "{ $lookup: { from: 'Services', localField: 'productDetails.service', foreignField: '_id', as: 'serviceDetails' } }",
-        "{ $unwind: '$serviceDetails' }",
-        "{ $match: { 'serviceDetails.name': ?2 } }",
-        "{ $group: { _id: '$name', primera_reserva: { $min: '$reservations.consumptions.date' }, ultima_reserva: { $max: '$reservations.consumptions.date' }, cantidad: { $sum: 1 } } }"
+            "{ $lookup: { from: 'RoomsReservations', localField: '_id', foreignField: 'user', as: 'reservations' } }",
+            "{ $unwind: { path: '$reservations' } }",
+            "{ $lookup: { from: 'Consumptions', localField: 'reservations.consumptions', foreignField: '_id', as: 'consumptions' } }",
+            "{ $unwind: { path: '$consumptions' } }",
+            "{ $match: { 'consumptions.date': { $gte:?0, $lte: ?1 } } }",
+            "{ $lookup: { from: 'Products', localField: 'consumptions.products', foreignField: '_id', as: 'productDetails' } }",
+            "{ $unwind: '$productDetails' }",
+            "{ $lookup: { from: 'Services', localField: 'productDetails._id', foreignField: 'products', as: 'serviceDetails' } }",
+            "{ $unwind: '$serviceDetails' }",
+            "{ $match: { 'serviceDetails.name': ?2 } }",
+            "{ $group: { _id: '$name', primerareserva: { $min: '$consumptions.date' }, ultimareserva: { $max: '$consumptions.date' }, cantidad: { $sum: 1 } } }",
+            "{$project:{_id:1, primerareserva: 1, ultimareserva:1, cantidad:1}}",
     })
     List<RespuestaServicioUsers> darInformacionUsersPorServicio(String startDate, String endDate, String serviceName);
 }
-
