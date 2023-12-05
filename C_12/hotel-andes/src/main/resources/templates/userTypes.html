@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <title>UserTypes</title>
+</head>
+<body>
+
+    <div th:replace="~{fragments/navBar}"></div>
+
+    <div>
+        <h1>Lista de tipos de usuario</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                </tr>
+            </thead>
+
+
+            <th:block th:each="userType:${userTypes}">
+                <tr>
+                    <td th:text="${userType.getIdType()}"></td>
+                    <td th:text="${userType.getName()}"></td>
+                </tr>
+                
+            </th:block>
+
+        </table>
+    </div>
+</body>
+</html>
