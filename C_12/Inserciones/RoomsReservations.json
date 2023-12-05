@@ -1,0 +1,836 @@
+[{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec50869c"
+  },
+  "entryDate": "2023-01-10",
+  "departureDate": "2023-01-15",
+  "numPeople": 6,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e1"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508623"
+  },
+  "_class": "uniandes.edu.co.proyecto.modelo.RoomReservation"
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec50869d"
+  },
+  "entryDate": "2023-02-09",
+  "departureDate": "2023-02-15",
+  "numPeople": 3,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e1"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508624"
+  },
+  "_class": "uniandes.edu.co.proyecto.modelo.RoomReservation"
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec50869e"
+  },
+  "entryDate": "2023-03-05",
+  "departureDate": "2023-03-10",
+  "numPeople": 1,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e3"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508625"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508688"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508689"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec50869f"
+  },
+  "entryDate": "2023-04-20",
+  "departureDate": "2023-04-25",
+  "numPeople": 3,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e4"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508626"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868b"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868c"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a0"
+  },
+  "entryDate": "2023-05-15",
+  "departureDate": "2023-05-20",
+  "numPeople": 5,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e5"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508627"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868e"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868f"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508690"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a1"
+  },
+  "entryDate": "2023-06-10",
+  "departureDate": "2023-06-15",
+  "numPeople": 2,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e6"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508628"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508691"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508692"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508693"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.RoomReservation"
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a2"
+  },
+  "entryDate": "2023-07-25",
+  "departureDate": "2023-07-30",
+  "numPeople": 3,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e7"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508629"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508694"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508695"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508696"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a3"
+  },
+  "entryDate": "2023-08-10",
+  "departureDate": "2023-08-15",
+  "numPeople": 4,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e8"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec50862a"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508697"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508698"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508699"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a4"
+  },
+  "entryDate": "2023-09-20",
+  "departureDate": "2023-09-25",
+  "numPeople": 2,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e9"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec50862b"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50869a"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50869b"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508682"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a5"
+  },
+  "entryDate": "2023-10-15",
+  "departureDate": "2023-10-20",
+  "numPeople": 1,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085ea"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec50862c"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508683"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508684"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508685"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a6"
+  },
+  "entryDate": "2022-01-10",
+  "departureDate": "2022-01-15",
+  "numPeople": 3,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e1"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508623"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508682"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508683"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508684"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a7"
+  },
+  "entryDate": "2022-02-15",
+  "departureDate": "2022-02-20",
+  "numPeople": 2,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e2"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508624"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508685"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508686"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508687"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a8"
+  },
+  "entryDate": "2022-03-20",
+  "departureDate": "2022-03-25",
+  "numPeople": 1,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e3"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508625"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508688"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508689"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086a9"
+  },
+  "entryDate": "2022-04-10",
+  "departureDate": "2022-04-15",
+  "numPeople": 4,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e4"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508626"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868b"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868c"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086aa"
+  },
+  "entryDate": "2022-05-15",
+  "departureDate": "2022-05-20",
+  "numPeople": 5,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e5"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508627"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868e"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868f"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508690"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086ab"
+  },
+  "entryDate": "2023-01-10",
+  "departureDate": "2023-01-15",
+  "numPeople": 3,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e1"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508623"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508682"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508683"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508684"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086ac"
+  },
+  "entryDate": "2023-02-15",
+  "departureDate": "2023-02-20",
+  "numPeople": 2,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e2"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508624"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508685"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508686"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508687"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086ad"
+  },
+  "entryDate": "2023-03-20",
+  "departureDate": "2023-03-25",
+  "numPeople": 1,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e3"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508625"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508688"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508689"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086ae"
+  },
+  "entryDate": "2023-04-10",
+  "departureDate": "2023-04-15",
+  "numPeople": 4,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e4"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508626"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868b"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868c"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086af"
+  },
+  "entryDate": "2023-05-15",
+  "departureDate": "2023-05-20",
+  "numPeople": 5,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e5"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508627"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868e"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868f"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508690"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b0"
+  },
+  "entryDate": "2022-06-10",
+  "departureDate": "2022-06-15",
+  "numPeople": 3,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e1"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508623"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508682"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508683"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508684"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b1"
+  },
+  "entryDate": "2022-08-20",
+  "departureDate": "2022-08-25",
+  "numPeople": 2,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e2"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508624"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508685"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508686"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508687"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b2"
+  },
+  "entryDate": "2022-10-10",
+  "departureDate": "2022-10-15",
+  "numPeople": 1,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e3"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508625"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508688"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508689"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b3"
+  },
+  "entryDate": "2022-12-05",
+  "departureDate": "2022-12-10",
+  "numPeople": 4,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e4"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508626"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868b"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868c"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b4"
+  },
+  "entryDate": "2023-01-15",
+  "departureDate": "2023-01-20",
+  "numPeople": 5,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e5"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508627"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50868e"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50868f"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508690"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b5"
+  },
+  "entryDate": "2023-03-10",
+  "departureDate": "2023-03-15",
+  "numPeople": 2,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e6"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508628"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508691"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508692"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508693"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.RoomReservation"
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b6"
+  },
+  "entryDate": "2023-05-20",
+  "departureDate": "2023-05-25",
+  "numPeople": 3,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e7"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508629"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508694"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508695"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508696"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b7"
+  },
+  "entryDate": "2023-07-10",
+  "departureDate": "2023-07-15",
+  "numPeople": 4,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e8"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec50862a"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508697"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508698"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508699"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b8"
+  },
+  "entryDate": "2023-09-15",
+  "departureDate": "2023-09-20",
+  "numPeople": 2,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085e9"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec50862b"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec50869a"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec50869b"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508682"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc8b61a6043bfec5086b9"
+  },
+  "entryDate": "2023-11-10",
+  "departureDate": "2023-11-15",
+  "numPeople": 1,
+  "checkIn": true,
+  "checkOut": false,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085ea"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec50862c"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508683"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508684"
+    },
+    {
+      "$oid": "656cc52a1a6043bfec508685"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656d4804c8a7da3f63073f07"
+  },
+  "entryDate": "2023-12-29",
+  "departureDate": "2024-01-01",
+  "numPeople": 123456789,
+  "checkIn": true,
+  "checkOut": true,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085ef"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508624"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508685"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.RoomReservation"
+},
+{
+  "_id": {
+    "$oid": "656d482dc8a7da3f63073f08"
+  },
+  "entryDate": "2024-03-21",
+  "departureDate": "2024-02-22",
+  "numPeople": 987654323,
+  "checkIn": true,
+  "checkOut": true,
+  "room": {
+    "$oid": "656cb67e1a6043bfec5085ef"
+  },
+  "user": {
+    "$oid": "656cb77d1a6043bfec508624"
+  },
+  "consumptions": [
+    {
+      "$oid": "656cc52a1a6043bfec508686"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.RoomReservation"
+}]

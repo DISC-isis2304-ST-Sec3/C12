@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "65627ab3dc6737749279ea13"
+  },
+  "name": "water",
+  "cost": 10,
+  "type": "Beverage"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508551"
+  },
+  "name": "Desayuno continental",
+  "cost": 25000,
+  "type": "Servicio de alimentos"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508552"
+  },
+  "name": "Masaje relajante",
+  "cost": 80000,
+  "type": "Servicio de spa"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508553"
+  },
+  "name": "Tour local",
+  "cost": 50000,
+  "type": "Actividad turística"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508554"
+  },
+  "name": "Cena gourmet",
+  "cost": 75000,
+  "type": "Servicio de alimentos"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508555"
+  },
+  "name": "Servicio de lavandería",
+  "cost": 30000,
+  "type": "Servicio"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508556"
+  },
+  "name": "Wi-Fi premium",
+  "cost": 10000,
+  "type": "Servicio de tecnología"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508557"
+  },
+  "name": "Alquiler de bicicletas",
+  "cost": 35000,
+  "type": "Servicio de recreación"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508558"
+  },
+  "name": "Cóctel de bienvenida",
+  "cost": 18000,
+  "type": "Bebida"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508559"
+  },
+  "name": "Servicio de transporte al aeropuerto",
+  "cost": 60000,
+  "type": "Servicio de transporte"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec50855a"
+  },
+  "name": "Clases de yoga",
+  "cost": 40000,
+  "type": "Actividad de bienestar"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec50855b"
+  },
+  "name": "Kit de bienvenida en la habitación",
+  "cost": 25000,
+  "type": "Servicio de habitación"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec50855c"
+  },
+  "name": "Acceso a la piscina",
+  "cost": 20000,
+  "type": "Servicio de recreación"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec50855d"
+  },
+  "name": "Tour gastronómico",
+  "cost": 55000,
+  "type": "Actividad turística"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec50855e"
+  },
+  "name": "Mascarilla facial de spa",
+  "cost": 35000,
+  "type": "Servicio de spa"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec50855f"
+  },
+  "name": "Caja de chocolates en la habitación",
+  "cost": 12000,
+  "type": "Servicio de habitación"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508560"
+  },
+  "name": "Servicio de limpieza en seco",
+  "cost": 28000,
+  "type": "Servicio"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508561"
+  },
+  "name": "Té de la tarde",
+  "cost": 18000,
+  "type": "Servicio de alimentos"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508562"
+  },
+  "name": "Tour histórico",
+  "cost": 48000,
+  "type": "Actividad turística"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508563"
+  },
+  "name": "Sesión de entrenamiento en el gimnasio",
+  "cost": 30000,
+  "type": "Servicio de bienestar"
+},
+{
+  "_id": {
+    "$oid": "656bb2aa1a6043bfec508564"
+  },
+  "name": "Mini bar en la habitación",
+  "cost": 15000,
+  "type": "Servicio de habitación"
+}]

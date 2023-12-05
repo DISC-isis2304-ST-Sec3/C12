@@ -1,0 +1,400 @@
+[{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085af"
+  },
+  "name": "Suite",
+  "capacity": 7,
+  "priceNight": 384
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b0"
+  },
+  "name": "Habitación Familiar",
+  "capacity": 3,
+  "priceNight": 107
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b1"
+  },
+  "name": "Habitación Adaptada para Personas con Discapacidad",
+  "capacity": 8,
+  "priceNight": 147
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b2"
+  },
+  "name": "Suite",
+  "capacity": 1,
+  "priceNight": 209
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b3"
+  },
+  "name": "Habitación Familiar",
+  "capacity": 12,
+  "priceNight": 238
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b4"
+  },
+  "name": "Habitación Ejecutiva",
+  "capacity": 15,
+  "priceNight": 168
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b5"
+  },
+  "name": "Habitación Ejecutiva",
+  "capacity": 17,
+  "priceNight": 124
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b6"
+  },
+  "name": "Habitación Conectada",
+  "capacity": 14,
+  "priceNight": 232
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b7"
+  },
+  "name": "Habitación Estándar",
+  "capacity": 1,
+  "priceNight": 126
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b8"
+  },
+  "name": "Suite",
+  "capacity": 18,
+  "priceNight": 277
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085b9"
+  },
+  "name": "Habitación Conectada",
+  "capacity": 15,
+  "priceNight": 227
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085ba"
+  },
+  "name": "Habitación Adaptada para Personas con Discapacidad",
+  "capacity": 13,
+  "priceNight": 143
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085bb"
+  },
+  "name": "Habitación con Vista",
+  "capacity": 7,
+  "priceNight": 171
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085bc"
+  },
+  "name": "Habitación Temática",
+  "capacity": 7,
+  "priceNight": 159
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085bd"
+  },
+  "name": "Suite",
+  "capacity": 17,
+  "priceNight": 130
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085be"
+  },
+  "name": "Habitación Conectada",
+  "capacity": 5,
+  "priceNight": 245
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085bf"
+  },
+  "name": "Habitación Estándar",
+  "capacity": 12,
+  "priceNight": 351
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c0"
+  },
+  "name": "Suite",
+  "capacity": 2,
+  "priceNight": 306
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c1"
+  },
+  "name": "Habitación Adaptada para Personas con Discapacidad",
+  "capacity": 7,
+  "priceNight": 139
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c2"
+  },
+  "name": "Habitación con Vista",
+  "capacity": 4,
+  "priceNight": 115
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c3"
+  },
+  "name": "Habitación Ejecutiva",
+  "capacity": 1,
+  "priceNight": 267
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c4"
+  },
+  "name": "Habitación Adaptada para Personas con Discapacidad",
+  "capacity": 3,
+  "priceNight": 184
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c5"
+  },
+  "name": "Habitación Familiar",
+  "capacity": 9,
+  "priceNight": 241
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c6"
+  },
+  "name": "Suite",
+  "capacity": 14,
+  "priceNight": 251
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c7"
+  },
+  "name": "Habitación Conectada",
+  "capacity": 2,
+  "priceNight": 251
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c8"
+  },
+  "name": "Habitación Estándar",
+  "capacity": 4,
+  "priceNight": 177
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085c9"
+  },
+  "name": "Habitación Familiar",
+  "capacity": 5,
+  "priceNight": 302
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085ca"
+  },
+  "name": "Habitación Adaptada para Personas con Discapacidad",
+  "capacity": 13,
+  "priceNight": 354
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085cb"
+  },
+  "name": "Habitación Deluxe",
+  "capacity": 10,
+  "priceNight": 251
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085cc"
+  },
+  "name": "Suite Presidencial",
+  "capacity": 1,
+  "priceNight": 118
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085cd"
+  },
+  "name": "Suite",
+  "capacity": 11,
+  "priceNight": 110
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085ce"
+  },
+  "name": "Habitación Deluxe",
+  "capacity": 12,
+  "priceNight": 249
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085cf"
+  },
+  "name": "Habitación Temática",
+  "capacity": 9,
+  "priceNight": 296
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d0"
+  },
+  "name": "Suite Presidencial",
+  "capacity": 4,
+  "priceNight": 192
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d1"
+  },
+  "name": "Habitación Estándar",
+  "capacity": 18,
+  "priceNight": 348
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d2"
+  },
+  "name": "Habitación Temática",
+  "capacity": 2,
+  "priceNight": 264
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d3"
+  },
+  "name": "Habitación Estándar",
+  "capacity": 8,
+  "priceNight": 155
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d4"
+  },
+  "name": "Suite",
+  "capacity": 5,
+  "priceNight": 155
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d5"
+  },
+  "name": "Habitación Temática",
+  "capacity": 11,
+  "priceNight": 329
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d6"
+  },
+  "name": "Suite Presidencial",
+  "capacity": 20,
+  "priceNight": 385
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d7"
+  },
+  "name": "Habitación Adaptada para Personas con Discapacidad",
+  "capacity": 19,
+  "priceNight": 191
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d8"
+  },
+  "name": "Habitación Estándar",
+  "capacity": 4,
+  "priceNight": 176
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085d9"
+  },
+  "name": "Habitación Estándar",
+  "capacity": 17,
+  "priceNight": 166
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085da"
+  },
+  "name": "Habitación Adaptada para Personas con Discapacidad",
+  "capacity": 15,
+  "priceNight": 295
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085db"
+  },
+  "name": "Habitación Familiar",
+  "capacity": 7,
+  "priceNight": 178
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085dc"
+  },
+  "name": "Habitación Familiar",
+  "capacity": 8,
+  "priceNight": 124
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085dd"
+  },
+  "name": "Habitación con Vista",
+  "capacity": 10,
+  "priceNight": 181
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085de"
+  },
+  "name": "Habitación Familiar",
+  "capacity": 2,
+  "priceNight": 113
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085df"
+  },
+  "name": "Habitación Ejecutiva",
+  "capacity": 1,
+  "priceNight": 241
+},
+{
+  "_id": {
+    "$oid": "656cb0511a6043bfec5085e0"
+  },
+  "name": "Habitación Ejecutiva",
+  "capacity": 17,
+  "priceNight": 249
+}]

@@ -1,0 +1,550 @@
+[{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508682"
+  },
+  "cost": 15000000,
+  "date": "2023/04/15",
+  "products": [
+    {
+      "$oid": "65627ab3dc6737749279ea13"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508552"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508683"
+  },
+  "cost": 5000000,
+  "date": "2022/09/20",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508554"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508555"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508556"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508557"
+    },
+    {
+      "$oid": "65627ab3dc6737749279ea13"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.Consumption"
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508684"
+  },
+  "cost": 7500000,
+  "date": "2021/12/05",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508558"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508559"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855a"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508685"
+  },
+  "cost": 12000000,
+  "date": "2022/11/10",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec50855c"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855d"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855e"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508686"
+  },
+  "cost": 20000000,
+  "date": "2023/01/30",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508560"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508561"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508562"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508563"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508687"
+  },
+  "cost": 8000000,
+  "date": "2022/05/18",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508564"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508552"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508688"
+  },
+  "cost": 1000000,
+  "date": "2021/08/02",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508554"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508555"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508556"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508557"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508689"
+  },
+  "cost": 3000000,
+  "date": "2022/03/12",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508558"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508559"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855a"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50868a"
+  },
+  "cost": 18000000,
+  "date": "2023/07/25",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec50855c"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855d"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855e"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50868b"
+  },
+  "cost": 6000000,
+  "date": "2021/10/08",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508560"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508561"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508562"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508563"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50868c"
+  },
+  "cost": 10000000,
+  "date": "2022/02/28",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508564"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508552"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50868d"
+  },
+  "cost": 9000000,
+  "date": "2021/06/15",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508554"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508555"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508556"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508557"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50868e"
+  },
+  "cost": 16000000,
+  "date": "2022/12/03",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508558"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508559"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855a"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50868f"
+  },
+  "cost": 7000000,
+  "date": "2023/03/22",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec50855c"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855d"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855e"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508690"
+  },
+  "cost": 4000000,
+  "date": "2022/06/30",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508560"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508561"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508562"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508563"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508691"
+  },
+  "cost": 11000000,
+  "date": "2021/11/14",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508564"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508552"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508692"
+  },
+  "cost": 1200000,
+  "date": "2021/09/08",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508554"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508555"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508556"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508557"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508693"
+  },
+  "cost": 13000000,
+  "date": "2022/04/25",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508558"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508559"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855a"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508694"
+  },
+  "cost": 17000000,
+  "date": "2023/08/12",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec50855c"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855d"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855e"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508695"
+  },
+  "cost": 14000000,
+  "date": "2022/01/10",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508560"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508561"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508562"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508563"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508696"
+  },
+  "cost": 19000000,
+  "date": "2023/05/05",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508564"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508552"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508697"
+  },
+  "cost": 600000,
+  "date": "2021/07/20",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508554"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508555"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508556"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508557"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508698"
+  },
+  "cost": 100000,
+  "date": "2022/10/15",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508558"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508559"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855a"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec508699"
+  },
+  "cost": 1700000,
+  "date": "2021/12/30",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec50855c"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855d"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855e"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec50855f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50869a"
+  },
+  "cost": 1100000,
+  "date": "2023/04/05",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508560"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508561"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508562"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508563"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc52a1a6043bfec50869b"
+  },
+  "cost": 800000,
+  "date": "2022/08/22",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508564"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508552"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    }
+  ]
+}]

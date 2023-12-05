@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "65628187dc6737749279ea4c"
+  },
+  "name": "Spa and Wellness",
+  "schedule": "08:00 - 22:00",
+  "capacity": 20,
+  "type": "Wellness",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec50855a"
+    },
+    {
+      "$oid": "65627ab3dc6737749279ea13"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508564"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.Service"
+},
+{
+  "_id": {
+    "$oid": "656b62a9ecbcd8210c593a81"
+  },
+  "name": "Service de prueba",
+  "schedule": "1 am a 2 am",
+  "capacity": 123,
+  "type": "Tipo de prueba",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508551"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.Service"
+},
+{
+  "_id": {
+    "$oid": "656bcf622b826f4f03bdf48f"
+  },
+  "name": "Service de prueba 5",
+  "schedule": "1 am a 2 am",
+  "capacity": 123456,
+  "type": "Tipo de prueba 5",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508558"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508557"
+    },
+    {
+      "$oid": "656bb2aa1a6043bfec508553"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.Service"
+},
+{
+  "_id": {
+    "$oid": "656d449cdc695264f7376781"
+  },
+  "name": "Gimnasio El Musculoso",
+  "schedule": "08:00 - 20:00",
+  "capacity": 150,
+  "type": "Gimnasio Fit",
+  "products": [
+    {
+      "$oid": "656bb2aa1a6043bfec508556"
+    }
+  ],
+  "_class": "uniandes.edu.co.proyecto.modelo.Service"
+}]

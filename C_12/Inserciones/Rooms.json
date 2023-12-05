@@ -1,0 +1,661 @@
+[{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e1"
+  },
+  "numRoom": 211,
+  "disponibility": true,
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b6"
+  },
+  "_class": "uniandes.edu.co.proyecto.modelo.Room"
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e2"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b6"
+  },
+  "disponibility": false,
+  "numRoom": 389
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e3"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c4"
+  },
+  "disponibility": true,
+  "numRoom": 178
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e4"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c1"
+  },
+  "disponibility": false,
+  "numRoom": 334
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e5"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d3"
+  },
+  "disponibility": true,
+  "numRoom": 126
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e6"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d5"
+  },
+  "disponibility": false,
+  "numRoom": 324
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e7"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b4"
+  },
+  "disponibility": true,
+  "numRoom": 301
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e8"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d6"
+  },
+  "disponibility": false,
+  "numRoom": 202
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085e9"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d7"
+  },
+  "disponibility": true,
+  "numRoom": 155
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085ea"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b9"
+  },
+  "disponibility": false,
+  "numRoom": 287
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085eb"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085bb"
+  },
+  "disponibility": true,
+  "numRoom": 179
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085ec"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c5"
+  },
+  "disponibility": false,
+  "numRoom": 293
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085ed"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c0"
+  },
+  "disponibility": true,
+  "numRoom": 213
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085ee"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d8"
+  },
+  "disponibility": false,
+  "numRoom": 173
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085ef"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085bd"
+  },
+  "disponibility": true,
+  "numRoom": 148
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f0"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085be"
+  },
+  "disponibility": false,
+  "numRoom": 187
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f1"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085ba"
+  },
+  "disponibility": true,
+  "numRoom": 238
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f2"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d2"
+  },
+  "disponibility": false,
+  "numRoom": 369
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f3"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c6"
+  },
+  "disponibility": true,
+  "numRoom": 336
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f4"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085dc"
+  },
+  "disponibility": false,
+  "numRoom": 149
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f5"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d1"
+  },
+  "disponibility": true,
+  "numRoom": 180
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f6"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c7"
+  },
+  "disponibility": false,
+  "numRoom": 297
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f7"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085db"
+  },
+  "disponibility": true,
+  "numRoom": 161
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f8"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085cc"
+  },
+  "disponibility": false,
+  "numRoom": 154
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085f9"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c8"
+  },
+  "disponibility": true,
+  "numRoom": 291
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085fa"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b0"
+  },
+  "disponibility": false,
+  "numRoom": 127
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085fb"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085da"
+  },
+  "disponibility": true,
+  "numRoom": 190
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085fc"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085ca"
+  },
+  "disponibility": false,
+  "numRoom": 387
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085fd"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d0"
+  },
+  "disponibility": true,
+  "numRoom": 175
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085fe"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085bb"
+  },
+  "disponibility": false,
+  "numRoom": 116
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec5085ff"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b3"
+  },
+  "disponibility": true,
+  "numRoom": 315
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508600"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c9"
+  },
+  "disponibility": false,
+  "numRoom": 257
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508601"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d4"
+  },
+  "disponibility": true,
+  "numRoom": 142
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508602"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085ce"
+  },
+  "disponibility": false,
+  "numRoom": 218
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508603"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085cb"
+  },
+  "disponibility": true,
+  "numRoom": 293
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508604"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d9"
+  },
+  "disponibility": false,
+  "numRoom": 156
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508605"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b5"
+  },
+  "disponibility": true,
+  "numRoom": 264
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508606"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d8"
+  },
+  "disponibility": false,
+  "numRoom": 143
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508607"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085dd"
+  },
+  "disponibility": true,
+  "numRoom": 369
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508608"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085bf"
+  },
+  "disponibility": false,
+  "numRoom": 195
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508609"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d1"
+  },
+  "disponibility": true,
+  "numRoom": 158
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50860a"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c3"
+  },
+  "disponibility": false,
+  "numRoom": 229
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50860b"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c0"
+  },
+  "disponibility": true,
+  "numRoom": 331
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50860c"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d6"
+  },
+  "disponibility": false,
+  "numRoom": 189
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50860d"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b7"
+  },
+  "disponibility": true,
+  "numRoom": 117
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50860e"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b1"
+  },
+  "disponibility": false,
+  "numRoom": 337
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50860f"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c8"
+  },
+  "disponibility": true,
+  "numRoom": 184
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508610"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085dc"
+  },
+  "disponibility": false,
+  "numRoom": 132
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508611"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c7"
+  },
+  "disponibility": true,
+  "numRoom": 276
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508612"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b8"
+  },
+  "disponibility": false,
+  "numRoom": 248
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508613"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c2"
+  },
+  "disponibility": true,
+  "numRoom": 193
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508614"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085cd"
+  },
+  "disponibility": false,
+  "numRoom": 214
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508615"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085ca"
+  },
+  "disponibility": true,
+  "numRoom": 266
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508616"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b2"
+  },
+  "disponibility": false,
+  "numRoom": 348
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508617"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085bb"
+  },
+  "disponibility": true,
+  "numRoom": 134
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508618"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085de"
+  },
+  "disponibility": false,
+  "numRoom": 219
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508619"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c5"
+  },
+  "disponibility": true,
+  "numRoom": 184
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50861a"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c1"
+  },
+  "disponibility": false,
+  "numRoom": 299
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50861b"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d2"
+  },
+  "disponibility": true,
+  "numRoom": 147
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50861c"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c6"
+  },
+  "disponibility": false,
+  "numRoom": 313
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50861d"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085b0"
+  },
+  "disponibility": true,
+  "numRoom": 172
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50861e"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c4"
+  },
+  "disponibility": false,
+  "numRoom": 189
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec50861f"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085d7"
+  },
+  "disponibility": true,
+  "numRoom": 224
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508620"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085c2"
+  },
+  "disponibility": false,
+  "numRoom": 362
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508621"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085cf"
+  },
+  "disponibility": true,
+  "numRoom": 122
+},
+{
+  "_id": {
+    "$oid": "656cb67e1a6043bfec508622"
+  },
+  "type": {
+    "$oid": "656cb0511a6043bfec5085da"
+  },
+  "disponibility": false,
+  "numRoom": 134
+}]
