@@ -19,26 +19,32 @@ public class UserController {
 
 
    @GetMapping("/usersServicio")
-    public String getInformacionUsersPorServicio(Model model, String idServicio, String fechaInicio, String fechaFinal, String sort) {
+    public String getInformacionUsersPorServicio(Model model, String idServicio, String fechaInicio, String fechaFinal,
+            String sort) {
         Collection<RespuestaServicioUsers> usersServicio;
+
         if ("asc".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioAsc(fechaInicio, fechaFinal, idServicio);
+            model.addAttribute("usersServicio",
+                    userRepository.darInformacionUsersPorServicioAsc(fechaInicio, fechaFinal, idServicio));
         } else if ("desc".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioDesc(fechaInicio, fechaFinal, idServicio);
+            model.addAttribute("usersServicio",
+                    userRepository.darInformacionUsersPorServicioDesc(fechaInicio, fechaFinal, idServicio));
         } else if ("ascU".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioUsuarioAsc(fechaInicio, fechaFinal, idServicio);
+            model.addAttribute("usersServicio",
+                    userRepository.darInformacionUsersPorServicioUsuarioAsc(fechaInicio, fechaFinal, idServicio));
         } else if ("descU".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioUsuarioDesc(fechaInicio, fechaFinal, idServicio);
+            model.addAttribute("usersServicio",
+                    userRepository.darInformacionUsersPorServicioUsuarioDesc(fechaInicio, fechaFinal, idServicio));
         } else if ("ascF".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioFechaAsc(fechaInicio, fechaFinal, idServicio);
+            model.addAttribute("usersServicio",
+                    userRepository.darInformacionUsersPorServicioFechaAsc(fechaInicio, fechaFinal, idServicio));
         } else if ("descF".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioFechaDesc(fechaInicio, fechaFinal, idServicio);
+            model.addAttribute("usersServicio",
+                    userRepository.darInformacionUsersPorServicioFechaDesc(fechaInicio, fechaFinal, idServicio));
+        } else {
+            model.addAttribute("usersServicio",
+                    userRepository.darInformacionUsersPorServicio(fechaInicio, fechaFinal, idServicio));
         }
-        else {
-            usersServicio = userRepository.darInformacionUsersPorServicio(fechaInicio, fechaFinal, idServicio);
-        }
-        model.addAttribute("usersServicio", usersServicio);
         return "usersServicio";
     }
-    
 }
