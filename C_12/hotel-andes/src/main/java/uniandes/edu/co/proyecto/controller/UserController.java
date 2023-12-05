@@ -22,20 +22,20 @@ public class UserController {
     public String getInformacionUsersPorServicio(Model model, String idServicio, String fechaInicio, String fechaFinal, String sort) {
         Collection<RespuestaServicioUsers> usersServicio;
         if ("asc".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioAsc(idServicio, fechaInicio, fechaFinal);
+            usersServicio = userRepository.darInformacionUsersPorServicioAsc(fechaInicio, fechaFinal, idServicio);
         } else if ("desc".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioDesc(idServicio, fechaInicio, fechaFinal);
+            usersServicio = userRepository.darInformacionUsersPorServicioDesc(fechaInicio, fechaFinal, idServicio);
         } else if ("ascU".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioUsuarioAsc(idServicio, fechaInicio, fechaFinal);
+            usersServicio = userRepository.darInformacionUsersPorServicioUsuarioAsc(fechaInicio, fechaFinal, idServicio);
         } else if ("descU".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioUsuarioDesc(idServicio, fechaInicio, fechaFinal);
+            usersServicio = userRepository.darInformacionUsersPorServicioUsuarioDesc(fechaInicio, fechaFinal, idServicio);
         } else if ("ascF".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioFechaAsc(idServicio, fechaInicio, fechaFinal);
+            usersServicio = userRepository.darInformacionUsersPorServicioFechaAsc(fechaInicio, fechaFinal, idServicio);
         } else if ("descF".equals(sort)) {
-            usersServicio = userRepository.darInformacionUsersPorServicioFechaDesc(idServicio, fechaInicio, fechaFinal);
+            usersServicio = userRepository.darInformacionUsersPorServicioFechaDesc(fechaInicio, fechaFinal, idServicio);
         }
         else {
-            usersServicio = userRepository.darInformacionUsersPorServicio(idServicio, fechaInicio, fechaFinal);
+            usersServicio = userRepository.darInformacionUsersPorServicio(fechaInicio, fechaFinal, idServicio);
         }
         model.addAttribute("usersServicio", usersServicio);
         return "usersServicio";
